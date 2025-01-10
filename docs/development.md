@@ -8,4 +8,17 @@ cd not-dead-yet
 npm install
 ```
 
+Add trivial content as per tutorial
+
+```
+	index.html                      - actual page
+	src/App.css                     - CSS 
+	src/App.tsx                     - the app
+	src/components/Footer.tsx       - bottom of page
+	src/components/Header.tsx       - top of page
+	src/components/MainContent.tsx  - the interactive content of the page
+	src/main.tsx                    - the main react object
+```
+
+
 

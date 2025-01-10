@@ -1,6 +1,6 @@
-This is a complete record of the development of this app
+# This is a complete record of the development of this app
 
-Initial scaffolding and installation:
+## Initial scaffolding and installation:
 
 ```
 npm create vite@latest not-dead-yet -- --template react-ts
@@ -8,7 +8,7 @@ cd not-dead-yet
 npm install
 ```
 
-Add trivial content as per tutorial
+## Add trivial content as per tutorial
 
 ```
 	index.html                      - actual page
@@ -20,5 +20,12 @@ Add trivial content as per tutorial
 	src/main.tsx                    - the main react object
 ```
 
+## Running
+
+```
+npm run dev
+```
+
+This will both run the server attached to the current terminal and open the page for you
 
 

@@ -25,6 +25,7 @@ const MainContent: React.FC = () => {
 
                 <div>
                     <Celeb daysOld={daysOld}/>
+                    <button onClick={() => setDaysOld(null)}>Try again</button>
                 </div>
 
                 :
@@ -38,6 +39,10 @@ const MainContent: React.FC = () => {
                         id="date-input"
                         value={birthDateString}
                         onChange={handleDateChange}
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter")
+                                handleDone()
+                        }}
                     />
                     <button onClick={handleDone}>?</button>
                 </div>

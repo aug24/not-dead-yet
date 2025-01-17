@@ -1,17 +1,25 @@
 import chooseCeleb from '../functions/ChooseCeleb.tsx';
-//import ShareButton from './ShareButton2.tsx'
-
 type CelebProps = {
   daysOld: number
+  birthDateString: String
 };
 
-const Celeb: React.FC<CelebProps> = ({ daysOld }) => {
+const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
     let celeb = chooseCeleb(daysOld)
+
     if (celeb !== null) {
         let byDays = daysOld - celeb!.days_old_at_death
+          const [yy, mm, dd] = birthDateString.split("-");
+
+          // Construct the URL with parameters
+          const bookmarkUrl = `${window.location.origin}?yy=${yy}&mm=${mm}&dd=${dd}`;
+
+        window.history.pushState({}, "", bookmarkUrl.toString());
+        document.title = `Not Dead Yet: ${birthDateString}`;
+
         return <>
                 <p>
-                   You are {daysOld} days old today!
+                   You are <em> {daysOld} </em> days old today!
                 </p>
                 <p>
                     You have outlived:

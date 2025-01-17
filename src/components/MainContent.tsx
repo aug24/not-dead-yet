@@ -4,9 +4,24 @@ import Celeb from "./Celeb.tsx";
 const MainContent: React.FC = () => {
     const [birthDateString, setBirthDateString] = useState<string>('');
     const [daysOld, setDaysOld] = useState<number | null>(null);
+  const queryString = window.location.search;
 
+  // Parse the query string
+  const params = new URLSearchParams(queryString);
+  const dd = params.get("dd");
+  const mm = params.get("mm");
+  const yy = params.get("yy");
+
+console.log("dd", dd)
+console.log("mm", mm)
+console.log("yy", yy)
+console.log(birthDateString)
+if (!birthDateString && dd && mm && yy) {
+  setBirthDateString(`${yy}-${mm}-${dd}`);
+}
     const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setBirthDateString(event.target.value);
+        console.log(birthDateString)
     }
 
     const handleDone = () => {
@@ -24,7 +39,7 @@ const MainContent: React.FC = () => {
             {(daysOld !== null && !isNaN(daysOld)) ?
 
                 <div>
-                    <Celeb daysOld={daysOld}/>
+                    <Celeb daysOld={daysOld!}/>
                     <button onClick={() => setDaysOld(null)}>Try again</button>
                 </div>
 
@@ -43,8 +58,10 @@ const MainContent: React.FC = () => {
                             if (e.key === "Enter")
                                 handleDone()
                         }}
+                        className="large-input"
                     />
-                    <button onClick={handleDone}>?</button>
+                    <br/>
+                    <button onClick={handleDone}>Submit</button>
                 </div>
             }
         </main>

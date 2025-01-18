@@ -33,7 +33,7 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
                     by {byDays} days!
                 </p>
                 <p>
-                    {celeb!.personLabel} was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.days_old_at_death} days old.
+                    {celeb!.personLabel}, noted {celeb!.profession}, was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.days_old_at_death} days old.
                 </p>
                 <Share name={celeb!.personLabel}/>
             </>

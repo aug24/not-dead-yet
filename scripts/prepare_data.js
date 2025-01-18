@@ -6,27 +6,52 @@ const actors = JSON.parse(
   await readFile(
     new URL('../data/actors.json', import.meta.url)
   )
-);
+).map(person => {
+   person.profession = 'actor'
+   return person
+});
+
 
 const athletes = JSON.parse(
   await readFile(
     new URL('../data/athletes.json', import.meta.url)
   )
-);
+).map(person => {
+   person.profession = 'athlete'
+   return person
+});
+
 
 const musicians = JSON.parse(
   await readFile(
     new URL('../data/musicians.json', import.meta.url)
   )
-);
+).map(person => {
+   person.profession = 'musician'
+   return person
+});
+
 
 const scientists = JSON.parse(
   await readFile(
     new URL('../data/scientists.json', import.meta.url)
   )
-);
+).map(person => {
+   person.profession = 'scientist'
+   return person
+});
 
-const everyone = actors.concat(athletes).concat(musicians).concat(scientists)
+
+const politicians = JSON.parse(
+  await readFile(
+    new URL('../data/politicians.json', import.meta.url)
+  )
+).map(person => {
+   person.profession = 'politician'
+   return person
+});
+
+const everyone = actors.concat(athletes).concat(musicians).concat(scientists).concat(politicians)
 const everyoneByDay = {}
 
 everyone.forEach(person => {

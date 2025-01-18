@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "publish": "./scripts/publishLocal.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-share": "^5.1.2"

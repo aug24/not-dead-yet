@@ -3,10 +3,6 @@
 
 # Todo
 
-Remove the crap from the index.css and index.js name so that I don't end up with lots of junk in S3.
-
-Check share api works as expected.
-
 Add more data.  
 
 Try to work out a better way of establishing "notable"
@@ -53,7 +49,7 @@ WHERE {
   }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
-LIMIT 100
+LIMIT 1000
 ```
 
 

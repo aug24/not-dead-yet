@@ -5,7 +5,7 @@ type ShareProps = {
 };
 
 const Share: React.FC<ShareProps> = ({ name }) => {
-  const shareText = `See who you've outlived.  I've outlived ${name}`
+  const shareText = `See who you've outlived at ${window.location.href}.\nI've outlived ${name}!`
   const handleShare = async () => {
     const shareData = {
       title: "I'm Not Dead Yet!",
@@ -26,20 +26,13 @@ const Share: React.FC<ShareProps> = ({ name }) => {
   };
 
   return (
-    <button
-      onClick={handleShare}
-      style={{
-        padding: "10px 20px",
-        fontSize: "16px",
-        backgroundColor: "#4caf50",
-        color: "white",
-        border: "none",
-        borderRadius: "5px",
-        cursor: "pointer",
-      }}
-    >
-      Share This Page
-    </button>
+    <>
+        <button onClick={handleShare}>
+        Share This Page
+        </button>
+        <br/>
+        <br/>
+    </>
   );
 };
 

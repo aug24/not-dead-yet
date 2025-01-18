@@ -1,1 +1,702 @@
-[{"person":"http://www.wikidata.org/entity/Q762","personLabel":"Leonardo da Vinci","birth_date":"1452-04-24T00:00:00Z","death_date":"1519-05-12T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Leonardo_da_Vinci"},{"person":"http://www.wikidata.org/entity/Q9353","personLabel":"John Locke","birth_date":"1632-09-08T00:00:00Z","death_date":"1704-11-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Locke"},{"person":"http://www.wikidata.org/entity/Q58720","personLabel":"Mikhail Lomonosov","birth_date":"1711-11-19T00:00:00Z","death_date":"1765-04-15T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Mikhail_Lomonosov"},{"person":"http://www.wikidata.org/entity/Q60095","personLabel":"Otto von Guericke","birth_date":"1602-11-30T00:00:00Z","death_date":"1686-05-21T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Otto_von_Guericke"},{"person":"http://www.wikidata.org/entity/Q317149","personLabel":"John Fisher","birth_date":"1469-10-28T00:00:00Z","death_date":"1535-07-02T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Fisher"},{"person":"http://www.wikidata.org/entity/Q317149","personLabel":"John Fisher","birth_date":"1469-10-28T00:00:00Z","death_date":"1535-07-16T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Fisher"},{"person":"http://www.wikidata.org/entity/Q335300","personLabel":"George Campbell, 8th Duke of Argyll","birth_date":"1823-04-30T00:00:00Z","death_date":"1900-04-24T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/George_Campbell,_8th_Duke_of_Argyll"},{"person":"http://www.wikidata.org/entity/Q315266","personLabel":"Nikolai Pirogov","birth_date":"1810-11-25T00:00:00Z","death_date":"1881-12-05T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Nikolay_Pirogov"},{"person":"http://www.wikidata.org/entity/Q12735","personLabel":"John Amos Comenius","birth_date":"1592-03-28T00:00:00Z","death_date":"1670-11-15T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Amos_Comenius"},{"person":"http://www.wikidata.org/entity/Q37388","personLabel":"Francis Bacon","birth_date":"1561-02-01T00:00:00Z","death_date":"1626-04-19T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Francis_Bacon"},{"person":"http://www.wikidata.org/entity/Q57100","personLabel":"Maria Goeppert Mayer","birth_date":"1906-06-28T00:00:00Z","death_date":"1972-02-20T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Maria_Goeppert_Mayer"},{"person":"http://www.wikidata.org/entity/Q377822","personLabel":"Per Teodor Cleve","birth_date":"1840-02-10T00:00:00Z","death_date":"1905-06-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Per_Teodor_Cleve"},{"person":"http://www.wikidata.org/entity/Q431485","personLabel":"Joseph-Nicolas Delisle","birth_date":"1688-04-04T00:00:00Z","death_date":"1768-09-11T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Joseph-Nicolas_Delisle"},{"person":"http://www.wikidata.org/entity/Q437675","personLabel":"Jane Ellen Harrison","birth_date":"1850-09-09T00:00:00Z","death_date":"1928-04-15T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jane_Ellen_Harrison"},{"person":"http://www.wikidata.org/entity/Q445843","personLabel":"Jean-Baptiste Van Mons","birth_date":"1765-11-11T00:00:00Z","death_date":"1842-09-06T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jean-Baptiste_Van_Mons"},{"person":"http://www.wikidata.org/entity/Q450317","personLabel":"Chien-Shiung Wu","birth_date":"1912-05-31T00:00:00Z","death_date":"1997-02-16T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Chien-Shiung_Wu"},{"person":"http://www.wikidata.org/entity/Q450757","personLabel":"Nevil Maskelyne","birth_date":"1732-10-06T00:00:00Z","death_date":"1811-02-09T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Nevil_Maskelyne"},{"person":"http://www.wikidata.org/entity/Q560826","personLabel":"Anna Heer","birth_date":"1863-03-22T00:00:00Z","death_date":"1918-12-09T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Anna_Heer"},{"person":"http://www.wikidata.org/entity/Q61680","personLabel":"Jeremias Benjamin Richter","birth_date":"1762-03-10T00:00:00Z","death_date":"1807-05-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jeremias_Benjamin_Richter"},{"person":"http://www.wikidata.org/entity/Q61745","personLabel":"Walter Gerlach","birth_date":"1889-08-01T00:00:00Z","death_date":"1979-08-10T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Walther_Gerlach"},{"person":"http://www.wikidata.org/entity/Q61824","personLabel":"Friedrich Carl Alwin Pockels","birth_date":"1865-06-18T00:00:00Z","death_date":"1913-08-29T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Friedrich_Carl_Alwin_Pockels"},{"person":"http://www.wikidata.org/entity/Q76291","personLabel":"Wilhelm Ahlwardt","birth_date":"1828-07-04T00:00:00Z","death_date":"1909-11-02T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Wilhelm_Ahlwardt"},{"person":"http://www.wikidata.org/entity/Q91082","personLabel":"Joachim Dietrich Brandis","birth_date":"1762-03-18T00:00:00Z","death_date":"1845-04-29T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Joachim_Dietrich_Brandis"},{"person":"http://www.wikidata.org/entity/Q94547","personLabel":"Ella Lingens","birth_date":"1908-11-18T00:00:00Z","death_date":"2002-12-30T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Ella_Lingens"},{"person":"http://www.wikidata.org/entity/Q101640","personLabel":"Robert Vischer","birth_date":"1847-02-22T00:00:00Z","death_date":"1933-03-24T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Robert_Vischer"},{"person":"http://www.wikidata.org/entity/Q113168","personLabel":"Karl Heinrich Gräffe","birth_date":"1799-11-07T00:00:00Z","death_date":"1873-12-02T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Karl_Heinrich_Gr%C3%A4ffe"},{"person":"http://www.wikidata.org/entity/Q123089","personLabel":"Benjamin Constant","birth_date":"1767-10-25T00:00:00Z","death_date":"1830-12-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Benjamin_Constant"},{"person":"http://www.wikidata.org/entity/Q128823","personLabel":"John Ambrose Fleming","birth_date":"1849-11-29T00:00:00Z","death_date":"1945-04-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Ambrose_Fleming"},{"person":"http://www.wikidata.org/entity/Q178287","personLabel":"Louis Bertrand Castel","birth_date":"1688-11-15T00:00:00Z","death_date":"1757-01-11T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Louis_Bertrand_Castel"},{"person":"http://www.wikidata.org/entity/Q182046","personLabel":"Leon Battista Alberti","birth_date":"1404-02-23T00:00:00Z","death_date":"1472-05-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Leon_Battista_Alberti"},{"person":"http://www.wikidata.org/entity/Q182967","personLabel":"József Kürschák","birth_date":"1864-03-14T00:00:00Z","death_date":"1933-03-26T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/J%C3%B3zsef_K%C3%BCrsch%C3%A1k"},{"person":"http://www.wikidata.org/entity/Q203769","personLabel":"Jean-Étienne Montucla","birth_date":"1725-09-05T00:00:00Z","death_date":"1799-12-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jean-%C3%89tienne_Montucla"},{"person":"http://www.wikidata.org/entity/Q207325","personLabel":"Christian Goldbach","birth_date":"1690-03-18T00:00:00Z","death_date":"1764-11-20T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Christian_Goldbach"},{"person":"http://www.wikidata.org/entity/Q213946","personLabel":"Johann Andreas Schubert","birth_date":"1808-03-19T00:00:00Z","death_date":"1870-10-06T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Johann_Andreas_Schubert"},{"person":"http://www.wikidata.org/entity/Q234888","personLabel":"Vera Rubin","birth_date":"1928-07-23T00:00:00Z","death_date":"2016-12-25T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Vera_Rubin"},{"person":"http://www.wikidata.org/entity/Q294169","personLabel":"Jan Baptist van Helmont","birth_date":"1577-01-01T00:00:00Z","death_date":"1644-12-30T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont"},{"person":"http://www.wikidata.org/entity/Q302835","personLabel":"Nasir al-Din al-Tusi","birth_date":"1201-02-25T00:00:00Z","death_date":"1274-07-03T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi"},{"person":"http://www.wikidata.org/entity/Q2646999","personLabel":"Caterina Scarpellini","birth_date":"1808-10-29T00:00:00Z","death_date":"1873-11-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Caterina_Scarpellini"},{"person":"http://www.wikidata.org/entity/Q3058541","personLabel":"Esprit Pezenas","birth_date":"1692-11-28T00:00:00Z","death_date":"1776-02-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Esprit_Pezenas"},{"person":"http://www.wikidata.org/entity/Q3293463","personLabel":"Luko Stulić","birth_date":"1772-09-22T00:00:00Z","death_date":"1828-09-17T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Luko_Stuli%C4%87"},{"person":"http://www.wikidata.org/entity/Q563553","personLabel":"Pierre Charles Le Monnier","birth_date":"1715-11-20T00:00:00Z","death_date":"1799-04-03T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Pierre_Charles_Le_Monnier"},{"person":"http://www.wikidata.org/entity/Q577704","personLabel":"Nikolai Nadezhdin","birth_date":"1804-10-17T00:00:00Z","death_date":"1856-01-23T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Nikolai_Nadezhdin"},{"person":"http://www.wikidata.org/entity/Q649387","personLabel":"John Gamble Kirkwood","birth_date":"1907-05-30T00:00:00Z","death_date":"1959-08-07T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Gamble_Kirkwood"},{"person":"http://www.wikidata.org/entity/Q649387","personLabel":"John Gamble Kirkwood","birth_date":"1907-05-30T00:00:00Z","death_date":"1959-08-09T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Gamble_Kirkwood"},{"person":"http://www.wikidata.org/entity/Q677603","personLabel":"Armand James Quick","birth_date":"1894-07-18T00:00:00Z","death_date":"1978-01-26T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Armand_J._Quick"},{"person":"http://www.wikidata.org/entity/Q731829","personLabel":"Christiaan Snouck","birth_date":"1857-02-08T00:00:00Z","death_date":"1936-06-26T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Christiaan_Snouck_Hurgronje"},{"person":"http://www.wikidata.org/entity/Q783040","personLabel":"Isaac Beeckman","birth_date":"1588-12-10T00:00:00Z","death_date":"1637-05-19T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Isaac_Beeckman"},{"person":"http://www.wikidata.org/entity/Q899453","personLabel":"John D. Clark","birth_date":"1907-08-15T00:00:00Z","death_date":"1988-07-06T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Drury_Clark"},{"person":"http://www.wikidata.org/entity/Q902182","personLabel":"Phoebus Levene","birth_date":"1869-02-25T00:00:00Z","death_date":"1940-09-06T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Phoebus_Levene"},{"person":"http://www.wikidata.org/entity/Q1045777","personLabel":"Alikhan Bokeikhanov","birth_date":"1866-03-05T00:00:00Z","death_date":"1937-09-27T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Alikhan_Bukeikhanov"},{"person":"http://www.wikidata.org/entity/Q1223640","personLabel":"Dietrich A. Loeber","birth_date":"1923-01-04T00:00:00Z","death_date":"2004-06-24T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Dietrich_A._Loeber"},{"person":"http://www.wikidata.org/entity/Q1231575","personLabel":"Charles Étienne Louis Camus","birth_date":"1699-08-25T00:00:00Z","death_date":"1768-05-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Charles_%C3%89tienne_Louis_Camus"},{"person":"http://www.wikidata.org/entity/Q1278657","personLabel":"Ebenezer Kinnersley","birth_date":"1711-11-30T00:00:00Z","death_date":"1778-07-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Ebenezer_Kinnersley"},{"person":"http://www.wikidata.org/entity/Q1343698","personLabel":"Enric Bernat","birth_date":"1923-10-20T00:00:00Z","death_date":"2003-12-27T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Enric_Bernat"},{"person":"http://www.wikidata.org/entity/Q1427817","personLabel":"Tingye Li","birth_date":"1931-07-07T00:00:00Z","death_date":"2012-12-27T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Tingye_Li"},{"person":"http://www.wikidata.org/entity/Q1439364","personLabel":"Fosco Maraini","birth_date":"1912-11-15T00:00:00Z","death_date":"2004-06-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Fosco_Maraini"},{"person":"http://www.wikidata.org/entity/Q1473903","personLabel":"Albert Howard","birth_date":"1873-12-08T00:00:00Z","death_date":"1947-10-20T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Albert_Howard"},{"person":"http://www.wikidata.org/entity/Q1479045","personLabel":"Ragnar Rylander","birth_date":"1935-09-12T00:00:00Z","death_date":"2016-04-13T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Ragnar_Rylander"},{"person":"http://www.wikidata.org/entity/Q1580771","personLabel":"Hans Klumbach","birth_date":"1904-04-26T00:00:00Z","death_date":"1992-12-14T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Hans_Klumbach"},{"person":"http://www.wikidata.org/entity/Q1613075","personLabel":"Hermann Wiener","birth_date":"1857-05-15T00:00:00Z","death_date":"1939-06-13T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Hermann_Wiener"},{"person":"http://www.wikidata.org/entity/Q1710492","personLabel":"Juan González Arintero","birth_date":"1860-06-24T00:00:00Z","death_date":"1928-02-20T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Juan_Gonz%C3%A1lez_Arintero"},{"person":"http://www.wikidata.org/entity/Q2004700","personLabel":"Pierre Bretonneau","birth_date":"1778-04-03T00:00:00Z","death_date":"1862-02-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Pierre_Bretonneau"},{"person":"http://www.wikidata.org/entity/Q2520495","personLabel":"Geoffrey Vickers","birth_date":"1894-10-13T00:00:00Z","death_date":"1982-03-16T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Geoffrey_Vickers"},{"person":"http://www.wikidata.org/entity/Q2520495","personLabel":"Geoffrey Vickers","birth_date":"1894-10-13T00:00:00Z","death_date":"1982-03-25T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Geoffrey_Vickers"},{"person":"http://www.wikidata.org/entity/Q3380899","personLabel":"Philippe d'Auvergne","birth_date":"1754-11-22T00:00:00Z","death_date":"1816-09-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Philippe_d%27Auvergne"},{"person":"http://www.wikidata.org/entity/Q3479714","personLabel":"Sergei Bakhrushin","birth_date":"1882-10-08T00:00:00Z","death_date":"1950-03-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Sergei_Bakhrushin"},{"person":"http://www.wikidata.org/entity/Q4181509","personLabel":"Valentin Zhukovsky","birth_date":"1858-05-06T00:00:00Z","death_date":"1918-01-17T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Valentin_Zhukovski"},{"person":"http://www.wikidata.org/entity/Q4191666","personLabel":"Nikolay Serafimovich Zefirov","birth_date":"1935-09-13T00:00:00Z","death_date":"2017-04-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Nikolay_Zefirov"},{"person":"http://www.wikidata.org/entity/Q4206722","personLabel":"Vladimir Rafailovich Kabo","birth_date":"1925-02-07T00:00:00Z","death_date":"2009-05-29T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Vladimir_Kabo"},{"person":"http://www.wikidata.org/entity/Q4206722","personLabel":"Vladimir Rafailovich Kabo","birth_date":"1925-02-07T00:00:00Z","death_date":"2009-06-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Vladimir_Kabo"},{"person":"http://www.wikidata.org/entity/Q4225361","personLabel":"Vladimir Kovalevsky","birth_date":"1848-11-10T00:00:00Z","death_date":"1934-11-02T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Vladimir_Kovalevsky"},{"person":"http://www.wikidata.org/entity/Q4257919","personLabel":"Oscar Leberecht von Lemm","birth_date":"1856-09-05T00:00:00Z","death_date":"1918-06-03T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Oscar_Lemm"},{"person":"http://www.wikidata.org/entity/Q4353636","personLabel":"Carl-Herman Tillhagen","birth_date":"1906-12-17T00:00:00Z","death_date":"2002-05-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Carl-Herman_Tillhagen"},{"person":"http://www.wikidata.org/entity/Q4404776","personLabel":"Vadim Sadovsky","birth_date":"1934-03-15T00:00:00Z","death_date":"2012-10-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Vadim_Sadovsky"},{"person":"http://www.wikidata.org/entity/Q4422470","personLabel":"Aleksandr Skochinsky","birth_date":"1874-07-01T00:00:00Z","death_date":"1960-10-06T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Alexander_Skochinsky"},{"person":"http://www.wikidata.org/entity/Q6227337","personLabel":"John Covel","birth_date":"1638-04-02T00:00:00Z","death_date":"1722-12-19T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Covel"},{"person":"http://www.wikidata.org/entity/Q6238291","personLabel":"John Hawkins","birth_date":"1761-05-06T00:00:00Z","death_date":"1841-07-04T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Hawkins_(geologist)"},{"person":"http://www.wikidata.org/entity/Q6244202","personLabel":"John Lawrence Oncley","birth_date":"1910-02-14T00:00:00Z","death_date":"2004-07-14T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/John_Lawrence_Oncley"},{"person":"http://www.wikidata.org/entity/Q6369412","personLabel":"Karel Šmirous","birth_date":"1890-12-03T00:00:00Z","death_date":"1981-02-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Karel_%C5%A0mirous"},{"person":"http://www.wikidata.org/entity/Q6419122","personLabel":"Ibn al-Mundhir","birth_date":"0850-01-01T00:00:00Z","death_date":"0930-01-01T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Ibn_al-Mundhir"},{"person":"http://www.wikidata.org/entity/Q4526677","personLabel":"Elena Shtaerman","birth_date":"1914-09-28T00:00:00Z","death_date":"1991-10-22T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Elena_Shtaerman"},{"person":"http://www.wikidata.org/entity/Q4752189","personLabel":"Anatoly Filippovich Smirnov","birth_date":"1909-12-04T00:00:00Z","death_date":"1986-02-25T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Anatoly_Filippovich_Smirnov"},{"person":"http://www.wikidata.org/entity/Q5126658","personLabel":"Clarence Madison Dally","birth_date":"1865-08-01T00:00:00Z","death_date":"1904-10-02T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Clarence_Madison_Dally"},{"person":"http://www.wikidata.org/entity/Q5217417","personLabel":"Daniel Hanbury","birth_date":"1825-09-11T00:00:00Z","death_date":"1875-03-24T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Daniel_Hanbury"},{"person":"http://www.wikidata.org/entity/Q5241234","personLabel":"D. Winton Thomas","birth_date":"1901-01-26T00:00:00Z","death_date":"1970-06-18T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/D._Winton_Thomas"},{"person":"http://www.wikidata.org/entity/Q5321777","personLabel":"E. C. Jeffrey","birth_date":"1866-05-21T00:00:00Z","death_date":"1952-04-19T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/E._C._Jeffrey"},{"person":"http://www.wikidata.org/entity/Q5339557","personLabel":"Edmund Hess","birth_date":"1843-02-17T00:00:00Z","death_date":"1903-12-24T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Edmund_Hess"},{"person":"http://www.wikidata.org/entity/Q5345150","personLabel":"Edward Ryan","birth_date":"1793-08-28T00:00:00Z","death_date":"1875-08-22T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Edward_Ryan_(barrister)"},{"person":"http://www.wikidata.org/entity/Q5482785","personLabel":"Francis William Bourdillon","birth_date":"1852-03-22T00:00:00Z","death_date":"1921-01-13T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Francis_William_Bourdillon"},{"person":"http://www.wikidata.org/entity/Q5497172","personLabel":"Frederic Wood Jones","birth_date":"1879-01-23T00:00:00Z","death_date":"1954-09-29T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Frederic_Wood_Jones"},{"person":"http://www.wikidata.org/entity/Q5653717","personLabel":"Harald Bjørlykke","birth_date":"1901-09-14T00:00:00Z","death_date":"1968-02-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Harald_Bj%C3%B8rlykke"},{"person":"http://www.wikidata.org/entity/Q5701361","personLabel":"Laurence Lockhart","birth_date":"1890-07-21T00:00:00Z","death_date":"1975-05-03T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Laurence_Lockhart"},{"person":"http://www.wikidata.org/entity/Q12900505","personLabel":"Jean Przyluski","birth_date":"1885-08-17T00:00:00Z","death_date":"1944-10-28T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Jean_Przyluski"},{"person":"http://www.wikidata.org/entity/Q14948806","personLabel":"Mark A.R. Kleiman","birth_date":"1951-05-18T00:00:00Z","death_date":"2019-07-21T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Mark_Kleiman"},{"person":"http://www.wikidata.org/entity/Q7052125","personLabel":"Norman Crowther Hunt, Baron Crowther-Hunt","birth_date":"1920-03-13T00:00:00Z","death_date":"1987-02-16T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Norman_Crowther_Hunt,_Baron_Crowther-Hunt"},{"person":"http://www.wikidata.org/entity/Q7184653","personLabel":"Philipos C. Loizou","birth_date":"1965-11-10T00:00:00Z","death_date":"2012-07-22T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Philipos_C._Loizou"},{"person":"http://www.wikidata.org/entity/Q7346071","personLabel":"Robert Jastrow","birth_date":"1925-09-07T00:00:00Z","death_date":"2008-02-08T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Robert_Jastrow"},{"person":"http://www.wikidata.org/entity/Q7377487","personLabel":"Rudolphina Menzel","birth_date":"1891-03-01T00:00:00Z","death_date":"1973-05-07T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Rudolphina_Menzel"},{"person":"http://www.wikidata.org/entity/Q7507224","personLabel":"Fozil Amirov","birth_date":"1914-01-26T00:00:00Z","death_date":"1979-07-07T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Fozil_Amirov"},{"person":"http://www.wikidata.org/entity/Q7787843","personLabel":"Thomas Brash","birth_date":"1874-11-29T00:00:00Z","death_date":"1957-01-19T00:00:00Z","wikipedia_article":"https://en.wikipedia.org/wiki/Thomas_Brash"}]
+[
+  {
+    "person": "http://www.wikidata.org/entity/Q762",
+    "personLabel": "Leonardo da Vinci",
+    "birth_date": "1452-04-24T00:00:00Z",
+    "death_date": "1519-05-12T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q9353",
+    "personLabel": "John Locke",
+    "birth_date": "1632-09-08T00:00:00Z",
+    "death_date": "1704-11-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Locke"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q58720",
+    "personLabel": "Mikhail Lomonosov",
+    "birth_date": "1711-11-19T00:00:00Z",
+    "death_date": "1765-04-15T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Mikhail_Lomonosov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q60095",
+    "personLabel": "Otto von Guericke",
+    "birth_date": "1602-11-30T00:00:00Z",
+    "death_date": "1686-05-21T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Otto_von_Guericke"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q317149",
+    "personLabel": "John Fisher",
+    "birth_date": "1469-10-28T00:00:00Z",
+    "death_date": "1535-07-02T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Fisher"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q317149",
+    "personLabel": "John Fisher",
+    "birth_date": "1469-10-28T00:00:00Z",
+    "death_date": "1535-07-16T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Fisher"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q335300",
+    "personLabel": "George Campbell, 8th Duke of Argyll",
+    "birth_date": "1823-04-30T00:00:00Z",
+    "death_date": "1900-04-24T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/George_Campbell,_8th_Duke_of_Argyll"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q315266",
+    "personLabel": "Nikolai Pirogov",
+    "birth_date": "1810-11-25T00:00:00Z",
+    "death_date": "1881-12-05T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Nikolay_Pirogov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q12735",
+    "personLabel": "John Amos Comenius",
+    "birth_date": "1592-03-28T00:00:00Z",
+    "death_date": "1670-11-15T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Amos_Comenius"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q37388",
+    "personLabel": "Francis Bacon",
+    "birth_date": "1561-02-01T00:00:00Z",
+    "death_date": "1626-04-19T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Francis_Bacon"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q57100",
+    "personLabel": "Maria Goeppert Mayer",
+    "birth_date": "1906-06-28T00:00:00Z",
+    "death_date": "1972-02-20T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Maria_Goeppert_Mayer"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q377822",
+    "personLabel": "Per Teodor Cleve",
+    "birth_date": "1840-02-10T00:00:00Z",
+    "death_date": "1905-06-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Per_Teodor_Cleve"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q431485",
+    "personLabel": "Joseph-Nicolas Delisle",
+    "birth_date": "1688-04-04T00:00:00Z",
+    "death_date": "1768-09-11T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Joseph-Nicolas_Delisle"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q437675",
+    "personLabel": "Jane Ellen Harrison",
+    "birth_date": "1850-09-09T00:00:00Z",
+    "death_date": "1928-04-15T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jane_Ellen_Harrison"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q445843",
+    "personLabel": "Jean-Baptiste Van Mons",
+    "birth_date": "1765-11-11T00:00:00Z",
+    "death_date": "1842-09-06T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jean-Baptiste_Van_Mons"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q450317",
+    "personLabel": "Chien-Shiung Wu",
+    "birth_date": "1912-05-31T00:00:00Z",
+    "death_date": "1997-02-16T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Chien-Shiung_Wu"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q450757",
+    "personLabel": "Nevil Maskelyne",
+    "birth_date": "1732-10-06T00:00:00Z",
+    "death_date": "1811-02-09T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Nevil_Maskelyne"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q560826",
+    "personLabel": "Anna Heer",
+    "birth_date": "1863-03-22T00:00:00Z",
+    "death_date": "1918-12-09T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Anna_Heer"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q61680",
+    "personLabel": "Jeremias Benjamin Richter",
+    "birth_date": "1762-03-10T00:00:00Z",
+    "death_date": "1807-05-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jeremias_Benjamin_Richter"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q61745",
+    "personLabel": "Walter Gerlach",
+    "birth_date": "1889-08-01T00:00:00Z",
+    "death_date": "1979-08-10T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Walther_Gerlach"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q61824",
+    "personLabel": "Friedrich Carl Alwin Pockels",
+    "birth_date": "1865-06-18T00:00:00Z",
+    "death_date": "1913-08-29T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Friedrich_Carl_Alwin_Pockels"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q76291",
+    "personLabel": "Wilhelm Ahlwardt",
+    "birth_date": "1828-07-04T00:00:00Z",
+    "death_date": "1909-11-02T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Wilhelm_Ahlwardt"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q91082",
+    "personLabel": "Joachim Dietrich Brandis",
+    "birth_date": "1762-03-18T00:00:00Z",
+    "death_date": "1845-04-29T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Joachim_Dietrich_Brandis"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q94547",
+    "personLabel": "Ella Lingens",
+    "birth_date": "1908-11-18T00:00:00Z",
+    "death_date": "2002-12-30T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Ella_Lingens"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q101640",
+    "personLabel": "Robert Vischer",
+    "birth_date": "1847-02-22T00:00:00Z",
+    "death_date": "1933-03-24T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Robert_Vischer"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q113168",
+    "personLabel": "Karl Heinrich Gräffe",
+    "birth_date": "1799-11-07T00:00:00Z",
+    "death_date": "1873-12-02T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Karl_Heinrich_Gr%C3%A4ffe"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q123089",
+    "personLabel": "Benjamin Constant",
+    "birth_date": "1767-10-25T00:00:00Z",
+    "death_date": "1830-12-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Benjamin_Constant"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q128823",
+    "personLabel": "John Ambrose Fleming",
+    "birth_date": "1849-11-29T00:00:00Z",
+    "death_date": "1945-04-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Ambrose_Fleming"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q178287",
+    "personLabel": "Louis Bertrand Castel",
+    "birth_date": "1688-11-15T00:00:00Z",
+    "death_date": "1757-01-11T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Louis_Bertrand_Castel"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q182046",
+    "personLabel": "Leon Battista Alberti",
+    "birth_date": "1404-02-23T00:00:00Z",
+    "death_date": "1472-05-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Leon_Battista_Alberti"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q182967",
+    "personLabel": "József Kürschák",
+    "birth_date": "1864-03-14T00:00:00Z",
+    "death_date": "1933-03-26T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/J%C3%B3zsef_K%C3%BCrsch%C3%A1k"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q203769",
+    "personLabel": "Jean-Étienne Montucla",
+    "birth_date": "1725-09-05T00:00:00Z",
+    "death_date": "1799-12-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jean-%C3%89tienne_Montucla"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q207325",
+    "personLabel": "Christian Goldbach",
+    "birth_date": "1690-03-18T00:00:00Z",
+    "death_date": "1764-11-20T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Christian_Goldbach"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q213946",
+    "personLabel": "Johann Andreas Schubert",
+    "birth_date": "1808-03-19T00:00:00Z",
+    "death_date": "1870-10-06T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Johann_Andreas_Schubert"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q234888",
+    "personLabel": "Vera Rubin",
+    "birth_date": "1928-07-23T00:00:00Z",
+    "death_date": "2016-12-25T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Vera_Rubin"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q294169",
+    "personLabel": "Jan Baptist van Helmont",
+    "birth_date": "1577-01-01T00:00:00Z",
+    "death_date": "1644-12-30T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q302835",
+    "personLabel": "Nasir al-Din al-Tusi",
+    "birth_date": "1201-02-25T00:00:00Z",
+    "death_date": "1274-07-03T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q2646999",
+    "personLabel": "Caterina Scarpellini",
+    "birth_date": "1808-10-29T00:00:00Z",
+    "death_date": "1873-11-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Caterina_Scarpellini"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q3058541",
+    "personLabel": "Esprit Pezenas",
+    "birth_date": "1692-11-28T00:00:00Z",
+    "death_date": "1776-02-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Esprit_Pezenas"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q3293463",
+    "personLabel": "Luko Stulić",
+    "birth_date": "1772-09-22T00:00:00Z",
+    "death_date": "1828-09-17T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Luko_Stuli%C4%87"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q563553",
+    "personLabel": "Pierre Charles Le Monnier",
+    "birth_date": "1715-11-20T00:00:00Z",
+    "death_date": "1799-04-03T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Pierre_Charles_Le_Monnier"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q577704",
+    "personLabel": "Nikolai Nadezhdin",
+    "birth_date": "1804-10-17T00:00:00Z",
+    "death_date": "1856-01-23T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Nikolai_Nadezhdin"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q649387",
+    "personLabel": "John Gamble Kirkwood",
+    "birth_date": "1907-05-30T00:00:00Z",
+    "death_date": "1959-08-07T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Gamble_Kirkwood"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q649387",
+    "personLabel": "John Gamble Kirkwood",
+    "birth_date": "1907-05-30T00:00:00Z",
+    "death_date": "1959-08-09T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Gamble_Kirkwood"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q677603",
+    "personLabel": "Armand James Quick",
+    "birth_date": "1894-07-18T00:00:00Z",
+    "death_date": "1978-01-26T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Armand_J._Quick"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q731829",
+    "personLabel": "Christiaan Snouck",
+    "birth_date": "1857-02-08T00:00:00Z",
+    "death_date": "1936-06-26T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Christiaan_Snouck_Hurgronje"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q783040",
+    "personLabel": "Isaac Beeckman",
+    "birth_date": "1588-12-10T00:00:00Z",
+    "death_date": "1637-05-19T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Isaac_Beeckman"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q899453",
+    "personLabel": "John D. Clark",
+    "birth_date": "1907-08-15T00:00:00Z",
+    "death_date": "1988-07-06T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Drury_Clark"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q902182",
+    "personLabel": "Phoebus Levene",
+    "birth_date": "1869-02-25T00:00:00Z",
+    "death_date": "1940-09-06T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Phoebus_Levene"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1045777",
+    "personLabel": "Alikhan Bokeikhanov",
+    "birth_date": "1866-03-05T00:00:00Z",
+    "death_date": "1937-09-27T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Alikhan_Bukeikhanov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1223640",
+    "personLabel": "Dietrich A. Loeber",
+    "birth_date": "1923-01-04T00:00:00Z",
+    "death_date": "2004-06-24T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Dietrich_A._Loeber"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1231575",
+    "personLabel": "Charles Étienne Louis Camus",
+    "birth_date": "1699-08-25T00:00:00Z",
+    "death_date": "1768-05-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Charles_%C3%89tienne_Louis_Camus"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1278657",
+    "personLabel": "Ebenezer Kinnersley",
+    "birth_date": "1711-11-30T00:00:00Z",
+    "death_date": "1778-07-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Ebenezer_Kinnersley"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1343698",
+    "personLabel": "Enric Bernat",
+    "birth_date": "1923-10-20T00:00:00Z",
+    "death_date": "2003-12-27T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Enric_Bernat"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1427817",
+    "personLabel": "Tingye Li",
+    "birth_date": "1931-07-07T00:00:00Z",
+    "death_date": "2012-12-27T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Tingye_Li"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1439364",
+    "personLabel": "Fosco Maraini",
+    "birth_date": "1912-11-15T00:00:00Z",
+    "death_date": "2004-06-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Fosco_Maraini"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1473903",
+    "personLabel": "Albert Howard",
+    "birth_date": "1873-12-08T00:00:00Z",
+    "death_date": "1947-10-20T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Albert_Howard"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1479045",
+    "personLabel": "Ragnar Rylander",
+    "birth_date": "1935-09-12T00:00:00Z",
+    "death_date": "2016-04-13T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Ragnar_Rylander"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1580771",
+    "personLabel": "Hans Klumbach",
+    "birth_date": "1904-04-26T00:00:00Z",
+    "death_date": "1992-12-14T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Hans_Klumbach"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1613075",
+    "personLabel": "Hermann Wiener",
+    "birth_date": "1857-05-15T00:00:00Z",
+    "death_date": "1939-06-13T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Hermann_Wiener"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q1710492",
+    "personLabel": "Juan González Arintero",
+    "birth_date": "1860-06-24T00:00:00Z",
+    "death_date": "1928-02-20T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Juan_Gonz%C3%A1lez_Arintero"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q2004700",
+    "personLabel": "Pierre Bretonneau",
+    "birth_date": "1778-04-03T00:00:00Z",
+    "death_date": "1862-02-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Pierre_Bretonneau"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q2520495",
+    "personLabel": "Geoffrey Vickers",
+    "birth_date": "1894-10-13T00:00:00Z",
+    "death_date": "1982-03-16T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Geoffrey_Vickers"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q2520495",
+    "personLabel": "Geoffrey Vickers",
+    "birth_date": "1894-10-13T00:00:00Z",
+    "death_date": "1982-03-25T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Geoffrey_Vickers"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q3380899",
+    "personLabel": "Philippe d'Auvergne",
+    "birth_date": "1754-11-22T00:00:00Z",
+    "death_date": "1816-09-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Philippe_d%27Auvergne"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q3479714",
+    "personLabel": "Sergei Bakhrushin",
+    "birth_date": "1882-10-08T00:00:00Z",
+    "death_date": "1950-03-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Sergei_Bakhrushin"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4181509",
+    "personLabel": "Valentin Zhukovsky",
+    "birth_date": "1858-05-06T00:00:00Z",
+    "death_date": "1918-01-17T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Valentin_Zhukovski"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4191666",
+    "personLabel": "Nikolay Serafimovich Zefirov",
+    "birth_date": "1935-09-13T00:00:00Z",
+    "death_date": "2017-04-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Nikolay_Zefirov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4206722",
+    "personLabel": "Vladimir Rafailovich Kabo",
+    "birth_date": "1925-02-07T00:00:00Z",
+    "death_date": "2009-05-29T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Vladimir_Kabo"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4206722",
+    "personLabel": "Vladimir Rafailovich Kabo",
+    "birth_date": "1925-02-07T00:00:00Z",
+    "death_date": "2009-06-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Vladimir_Kabo"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4225361",
+    "personLabel": "Vladimir Kovalevsky",
+    "birth_date": "1848-11-10T00:00:00Z",
+    "death_date": "1934-11-02T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Vladimir_Kovalevsky"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4257919",
+    "personLabel": "Oscar Leberecht von Lemm",
+    "birth_date": "1856-09-05T00:00:00Z",
+    "death_date": "1918-06-03T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Oscar_Lemm"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4353636",
+    "personLabel": "Carl-Herman Tillhagen",
+    "birth_date": "1906-12-17T00:00:00Z",
+    "death_date": "2002-05-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Carl-Herman_Tillhagen"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4404776",
+    "personLabel": "Vadim Sadovsky",
+    "birth_date": "1934-03-15T00:00:00Z",
+    "death_date": "2012-10-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Vadim_Sadovsky"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4422470",
+    "personLabel": "Aleksandr Skochinsky",
+    "birth_date": "1874-07-01T00:00:00Z",
+    "death_date": "1960-10-06T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Alexander_Skochinsky"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q6227337",
+    "personLabel": "John Covel",
+    "birth_date": "1638-04-02T00:00:00Z",
+    "death_date": "1722-12-19T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Covel"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q6238291",
+    "personLabel": "John Hawkins",
+    "birth_date": "1761-05-06T00:00:00Z",
+    "death_date": "1841-07-04T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Hawkins_(geologist)"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q6244202",
+    "personLabel": "John Lawrence Oncley",
+    "birth_date": "1910-02-14T00:00:00Z",
+    "death_date": "2004-07-14T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/John_Lawrence_Oncley"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q6369412",
+    "personLabel": "Karel Šmirous",
+    "birth_date": "1890-12-03T00:00:00Z",
+    "death_date": "1981-02-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Karel_%C5%A0mirous"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q6419122",
+    "personLabel": "Ibn al-Mundhir",
+    "birth_date": "0850-01-01T00:00:00Z",
+    "death_date": "0930-01-01T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Ibn_al-Mundhir"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4526677",
+    "personLabel": "Elena Shtaerman",
+    "birth_date": "1914-09-28T00:00:00Z",
+    "death_date": "1991-10-22T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Elena_Shtaerman"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q4752189",
+    "personLabel": "Anatoly Filippovich Smirnov",
+    "birth_date": "1909-12-04T00:00:00Z",
+    "death_date": "1986-02-25T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Anatoly_Filippovich_Smirnov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5126658",
+    "personLabel": "Clarence Madison Dally",
+    "birth_date": "1865-08-01T00:00:00Z",
+    "death_date": "1904-10-02T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Clarence_Madison_Dally"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5217417",
+    "personLabel": "Daniel Hanbury",
+    "birth_date": "1825-09-11T00:00:00Z",
+    "death_date": "1875-03-24T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Daniel_Hanbury"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5241234",
+    "personLabel": "D. Winton Thomas",
+    "birth_date": "1901-01-26T00:00:00Z",
+    "death_date": "1970-06-18T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/D._Winton_Thomas"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5321777",
+    "personLabel": "E. C. Jeffrey",
+    "birth_date": "1866-05-21T00:00:00Z",
+    "death_date": "1952-04-19T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/E._C._Jeffrey"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5339557",
+    "personLabel": "Edmund Hess",
+    "birth_date": "1843-02-17T00:00:00Z",
+    "death_date": "1903-12-24T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Edmund_Hess"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5345150",
+    "personLabel": "Edward Ryan",
+    "birth_date": "1793-08-28T00:00:00Z",
+    "death_date": "1875-08-22T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Edward_Ryan_(barrister)"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5482785",
+    "personLabel": "Francis William Bourdillon",
+    "birth_date": "1852-03-22T00:00:00Z",
+    "death_date": "1921-01-13T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Francis_William_Bourdillon"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5497172",
+    "personLabel": "Frederic Wood Jones",
+    "birth_date": "1879-01-23T00:00:00Z",
+    "death_date": "1954-09-29T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Frederic_Wood_Jones"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5653717",
+    "personLabel": "Harald Bjørlykke",
+    "birth_date": "1901-09-14T00:00:00Z",
+    "death_date": "1968-02-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Harald_Bj%C3%B8rlykke"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q5701361",
+    "personLabel": "Laurence Lockhart",
+    "birth_date": "1890-07-21T00:00:00Z",
+    "death_date": "1975-05-03T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Laurence_Lockhart"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q12900505",
+    "personLabel": "Jean Przyluski",
+    "birth_date": "1885-08-17T00:00:00Z",
+    "death_date": "1944-10-28T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Jean_Przyluski"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q14948806",
+    "personLabel": "Mark A.R. Kleiman",
+    "birth_date": "1951-05-18T00:00:00Z",
+    "death_date": "2019-07-21T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Mark_Kleiman"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7052125",
+    "personLabel": "Norman Crowther Hunt, Baron Crowther-Hunt",
+    "birth_date": "1920-03-13T00:00:00Z",
+    "death_date": "1987-02-16T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Norman_Crowther_Hunt,_Baron_Crowther-Hunt"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7184653",
+    "personLabel": "Philipos C. Loizou",
+    "birth_date": "1965-11-10T00:00:00Z",
+    "death_date": "2012-07-22T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Philipos_C._Loizou"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7346071",
+    "personLabel": "Robert Jastrow",
+    "birth_date": "1925-09-07T00:00:00Z",
+    "death_date": "2008-02-08T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Robert_Jastrow"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7377487",
+    "personLabel": "Rudolphina Menzel",
+    "birth_date": "1891-03-01T00:00:00Z",
+    "death_date": "1973-05-07T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Rudolphina_Menzel"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7507224",
+    "personLabel": "Fozil Amirov",
+    "birth_date": "1914-01-26T00:00:00Z",
+    "death_date": "1979-07-07T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Fozil_Amirov"
+  },
+  {
+    "person": "http://www.wikidata.org/entity/Q7787843",
+    "personLabel": "Thomas Brash",
+    "birth_date": "1874-11-29T00:00:00Z",
+    "death_date": "1957-01-19T00:00:00Z",
+    "wikipedia_article": "https://en.wikipedia.org/wiki/Thomas_Brash"
+  }
+]

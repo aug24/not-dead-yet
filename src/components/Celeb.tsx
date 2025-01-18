@@ -1,4 +1,6 @@
 import chooseCeleb from '../functions/ChooseCeleb.tsx';
+import Share from './Share.tsx'
+
 type CelebProps = {
   daysOld: number
   birthDateString: String
@@ -9,13 +11,15 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
 
     if (celeb !== null) {
         let byDays = daysOld - celeb!.days_old_at_death
-          const [yy, mm, dd] = birthDateString.split("-");
+        const [yy, mm, dd] = birthDateString.split("-");
 
-          // Construct the URL with parameters
-          const bookmarkUrl = `${window.location.origin}?yy=${yy}&mm=${mm}&dd=${dd}`;
-
+        // Construct the URL with parameters
+        const bookmarkUrl = `${window.location.origin}${window.location.pathname}?yy=${yy}&mm=${mm}&dd=${dd}`;
         window.history.pushState({}, "", bookmarkUrl.toString());
         document.title = `Not Dead Yet: ${birthDateString}`;
+
+        const formattedBirthDate = new Date(celeb!.birth_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
+        const formattedDeathDate = new Date(celeb!.death_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
 
         return <>
                 <p>
@@ -29,8 +33,9 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
                     by {byDays} days!
                 </p>
                 <p>
-                    They were born on {celeb!.birth_date} and died on {celeb!.death_date}.
+                    {celeb!.personLabel} was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.days_old_at_death} days old.
                 </p>
+                <Share name={celeb!.personLabel}/>
             </>
         ;
     }

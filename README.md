@@ -1,6 +1,22 @@
 # not-dead-yet
 
 
+# Todo
+
+Remove the crap from the index.css and index.js name so that I don't end up with lots of junk in S3.
+
+Check share api works as expected.
+
+Add more data.  
+
+Try to work out a better way of establishing "notable"
+
+Publish at its own address
+
+Add Google Ads
+
+
+
 
 To filter Wikidata queries by specific professions using SPARQL, you'll need the corresponding Wikidata QIDs (unique identifiers) for each profession. Here are some notable professions along with their QIDs that you can use in your queries:
 

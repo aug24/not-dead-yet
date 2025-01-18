@@ -8,9 +8,9 @@ const actors = JSON.parse(
   )
 );
 
-const scientists = JSON.parse(
+const athletes = JSON.parse(
   await readFile(
-    new URL('../data/scientists.json', import.meta.url)
+    new URL('../data/athletes.json', import.meta.url)
   )
 );
 
@@ -20,7 +20,13 @@ const musicians = JSON.parse(
   )
 );
 
-const everyone = actors.concat(scientists).concat(musicians)
+const scientists = JSON.parse(
+  await readFile(
+    new URL('../data/scientists.json', import.meta.url)
+  )
+);
+
+const everyone = actors.concat(athletes).concat(musicians).concat(scientists)
 const everyoneByDay = {}
 
 everyone.forEach(person => {
@@ -42,6 +48,4 @@ if (NaN in everyoneByDay) {
 const everyoneByDayOutput = JSON.stringify(everyoneByDay, null, 2);
 
 await writeFile('./src/data/peopleByDay.json', everyoneByDayOutput, 'utf8');
-
-console.log(JSON.stringify(everyoneByDay, null, 2));
 

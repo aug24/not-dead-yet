@@ -29,7 +29,9 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
             ? 'If you make it to midnight, you will have outlived'
             : byDays==1
               ? 'Today, you have outlived'
-              : 'You have easily outlived'
+              : byDays<5
+                ? 'You have now outlived'
+                : 'You have <em>easily</em> outlived'
 
         const message2 =
           byDays==0

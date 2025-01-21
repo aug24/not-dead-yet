@@ -30,15 +30,15 @@ const MainContent: React.FC = () => {
 
                 <div>
                     <Celeb daysOld={daysOld!} birthDateString={birthDateString}/>
-                    <button onClick={() => setDaysOld(null)}>Try again</button>
+                    <button onClick={() => setDaysOld(null)}>Try a different date</button>
                 </div>
 
                 :
 
                 <div>
-                    <p>You're not dead yet - good start!</p>
-                    <p>Enter your date of birth below to see who you're older than today:</p>
-                    <label htmlFor="date-input">Birthdate: </label>
+                    <p>You're <em>not dead yet</em> - good start!</p>
+                    <p>Enter your date of birth below to see who you're older than today</p>
+                    <button onClick={handleDone}>Compare lives for</button>
                     <input
                         type="date"
                         id="date-input"
@@ -50,8 +50,6 @@ const MainContent: React.FC = () => {
                         }}
                         className="large-input"
                     />
-                    <br/>
-                    <button onClick={handleDone}>Submit</button>
                 </div>
             }
         </main>

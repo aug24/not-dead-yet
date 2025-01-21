@@ -5,7 +5,8 @@ type ShareProps = {
 };
 
 const Share: React.FC<ShareProps> = ({ name }) => {
-  const shareText = `See who you've outlived at ${window.location.href}.\nI've outlived ${name}!`
+  const address =  window.location.origin + window.location.pathname
+  const shareText = `See who you've outlived at ${address}.\n\nI've outlived ${name}!`
   const handleShare = async () => {
     const shareData = {
       title: "I'm Not Dead Yet!",

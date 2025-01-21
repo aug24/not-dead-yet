@@ -20,17 +20,34 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
 
         const formattedBirthDate = new Date(celeb!.birth_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
         const formattedDeathDate = new Date(celeb!.death_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
+        const nameWithUnderscores = celeb!.personLabel?.replace(/ /g, '_')
+        const autoLink = `https://en.wikipedia.org/wiki/${nameWithUnderscores}`
+        const link = celeb!.wikipedia_article || autoLink
+
+        const message1 =
+          byDays==0
+            ? 'If you make it to midnight, you will have outlived'
+            : byDays==1
+              ? 'Today, you have outlived'
+              : 'You have easily outlived'
+
+        const message2 =
+          byDays==0
+            ? ``
+            : byDays==1
+              ? `by exactly one day`
+              : `by ${byDays} days!`
 
         return <>
                 <p>
                    You are <em> {daysOld} </em> days old today!
                 </p>
                 <p>
-                    You have outlived:
+                    {message1}
                     <br/>
-                    <a href={celeb!.wikipedia_article} target="_blank">{celeb!.personLabel}</a>
+                    <a href={link} target="_blank">{celeb!.personLabel}</a>
                     <br/>
-                    by {byDays} days!
+                    {message2}
                 </p>
                 <p>
                     {celeb!.personLabel}, noted {celeb!.profession}, was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.days_old_at_death} days old.

@@ -54,7 +54,31 @@ const politicians = JSON.parse(
 const everyone = actors.concat(athletes).concat(musicians).concat(scientists).concat(politicians)
 const everyoneByDay = {}
 
+
 everyone.forEach(person => {
+
+  // Check if the Wikipedia article is a Wikipedia link
+  if (!person.wikipedia_article || !person.wikipedia_article.startsWith('https://en.wikipedia.org/wiki/')) {
+    return; // Skip this record
+  }
+
+  // Remove the `wikipedia_article` field if it matches the Wikipedia name/link pattern
+  const nameWithUnderscores = person.personLabel?.replace(/ /g, '_');
+  if (person.wikipedia_article === `https://en.wikipedia.org/wiki/${nameWithUnderscores}`) {
+    delete person.wikipedia_article;
+  }
+
+  // Remove the timestamp from `birth_date` and `death_date`
+  if (person.birth_date) {
+    person.birth_date = person.birth_date.split('T')[0]; // Retain only the date portion
+  }
+  if (person.death_date) {
+    person.death_date = person.death_date.split('T')[0]; // Retain only the date portion
+  }
+
+  // Remove `person` field
+  delete person.person;
+
   const birthDate = new Date(person.birth_date);
   const deathDate = new Date(person.death_date);
   const daysOld = Math.floor((deathDate - birthDate) / (1000 * 60 * 60 * 24)); // Difference in days

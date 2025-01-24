@@ -7,6 +7,7 @@ function chooseCeleb(daysOld: number | null) {
     const peopleByDay: PeopleByDay = untypedPeopleByDay;
     if (!daysOld) return null
 
+    daysOld -= 1 // Always start with someone who died at least one day younger
     while (daysOld > 0 && !(daysOld.toString() in peopleByDay)) {
       //console.log(daysOld)
       daysOld -= 1

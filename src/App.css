@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+h1 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

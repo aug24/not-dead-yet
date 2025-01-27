@@ -38,7 +38,6 @@ const MainContent: React.FC = () => {
                 <div>
                     <p>You're <em>not dead yet</em> - good start!</p>
                     <p>Enter your date of birth below to see who you're older than today</p>
-                    <button onClick={handleDone}>Compare lives for</button>
                     <input
                         type="date"
                         id="date-input"
@@ -50,6 +49,11 @@ const MainContent: React.FC = () => {
                         }}
                         className="large-input"
                     />
+                    <br/>
+                    <button
+                        className="large-input"
+                        onClick={handleDone}
+                    >Check please!</button>
                 </div>
             }
         </main>

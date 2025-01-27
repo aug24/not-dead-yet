@@ -47,7 +47,7 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
                 <p>
                     {message1}
                     <br/>
-                    <a href={link} target="_blank">{celeb!.l}</a>
+                    <a className="celeb" href={link} target="_blank">{celeb!.l}</a>
                     <br/>
                     {message2}
                 </p>

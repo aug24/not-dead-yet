@@ -10,7 +10,7 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
     let celeb = chooseCeleb(daysOld)
 
     if (celeb !== null) {
-        let byDays = daysOld - celeb!.days_old_at_death
+        let byDays = daysOld - celeb!.o!
         const [yy, mm, dd] = birthDateString.split("-");
 
         // Construct the URL with parameters
@@ -18,11 +18,11 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
         window.history.pushState({}, "", bookmarkUrl.toString());
         document.title = `Not Dead Yet: ${birthDateString}`;
 
-        const formattedBirthDate = new Date(celeb!.birth_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
-        const formattedDeathDate = new Date(celeb!.death_date!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
-        const nameWithUnderscores = celeb!.personLabel?.replace(/ /g, '_')
+        const formattedBirthDate = new Date(celeb!.b!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
+        const formattedDeathDate = new Date(celeb!.d!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
+        const nameWithUnderscores = celeb!.l?.replace(/ /g, '_')
         const autoLink = `https://en.wikipedia.org/wiki/${nameWithUnderscores}`
-        const link = celeb!.wikipedia_article || autoLink
+        const link = celeb!.w || autoLink
 
         const message1 =
           byDays==0
@@ -47,14 +47,14 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
                 <p>
                     {message1}
                     <br/>
-                    <a href={link} target="_blank">{celeb!.personLabel}</a>
+                    <a href={link} target="_blank">{celeb!.l}</a>
                     <br/>
                     {message2}
                 </p>
                 <p>
-                    {celeb!.personLabel}, noted {celeb!.profession}, was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.days_old_at_death} days old.
+                    {celeb!.l}, noted {celeb!.p}, was born on {formattedBirthDate}, and died on {formattedDeathDate} at {celeb!.o} days old.
                 </p>
-                <Share name={celeb!.personLabel}/>
+                <Share name={celeb!.l}/>
             </>
         ;
     }

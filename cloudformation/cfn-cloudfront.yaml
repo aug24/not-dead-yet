@@ -1,0 +1,46 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "BucketAddress": {
+            "Description": "Bucket address for storing your website",
+            "Type": "String"
+        },
+        "AcmCertificateArn": {
+            "Description": "Certificate arn for your website",
+            "Type": "String"
+        },
+    },
+    "Resources": {
+        "cloudFrontDistribution": {
+            "Type" : "AWS::CloudFront::Distribution",
+            "Properties" : {
+                "DistributionConfig" : {
+                    "Origins": [
+                        {
+                            "CustomOriginConfig" : {
+                                "OriginProtocolPolicy" : "http-only",
+                            },
+                            "DomainName": {"Ref":"BucketAddress"},
+                            "Id" : "bucket",
+                        }
+                    ],
+                    "DefaultCacheBehavior": {
+                        "DefaultTTL" : 120,
+                        "ForwardedValues" : {
+                            "QueryString" : "False",
+                        },
+                        "TargetOriginId" : "bucket",
+                        "ViewerProtocolPolicy" : "redirect-to-https"
+                    },
+                    "DefaultRootObject" : "index.html",
+                    "Enabled" : "True",
+                    "PriceClass" : "PriceClass_100",
+                    "ViewerCertificate" : {
+                        "AcmCertificateArn" : {"Ref":"AcmCertificateArn"},
+                        "SslSupportMethod": "sni-only",
+                    }
+                }
+            }
+        }
+    },
+}

@@ -29,7 +29,7 @@ const Share: React.FC<ShareProps> = ({ name }) => {
   return (
     <>
         <button onClick={handleShare}>
-        Share This Page
+        Share
         </button>
         <br/>
         <br/>

@@ -21,6 +21,9 @@ function chooseCeleb(daysOld: number | null) {
 
     let randomIndex: number = Math.floor(Math.random() * possibleCelebs.length);
     let chosenCeleb: Person = possibleCelebs[randomIndex];
+
+    chosenCeleb.o = daysOld
+
     console.log(chosenCeleb)
     return chosenCeleb;
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Celeb from "./Celeb.tsx";
+import CarouselCeleb from "./CarouselCeleb.tsx";
 
 const MainContent: React.FC = () => {
     const [birthDateString, setBirthDateString] = useState<string>('');
@@ -29,7 +29,8 @@ const MainContent: React.FC = () => {
             {(daysOld !== null && !isNaN(daysOld)) ?
 
                 <div>
-                    <Celeb daysOld={daysOld!} birthDateString={birthDateString}/>
+                    <CarouselCeleb daysOld={daysOld!} birthDateString={birthDateString}/>
+                    <p>See you again tomorrow, when you'll be {daysOld!+1} days old, and hopefully have outlived someone else.</p>
                     <button onClick={() => setDaysOld(null)}>Try a different date</button>
                 </div>
 

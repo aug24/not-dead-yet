@@ -14,8 +14,6 @@ function chooseCeleb(daysOld: number | null) {
     }
     if (daysOld==0) return null
 
-    console.log("here!")
-
     let possibleCelebs: PersonList = peopleByDay[''+daysOld]
     console.log(possibleCelebs)
 

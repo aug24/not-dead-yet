@@ -188,9 +188,59 @@ button:focus-visible {
   padding: 10px;
 }
 
-.celeb::after {
-  content: "🔗"; /* Icon indicating it opens externally */
-  font-size: 0.5em; /* Slightly smaller icon */
-  margin-left: 0.3em; /* Spacing between text and icon */
-  vertical-align: top; /* Align icon with text */
+.external-icon {
+  margin-left: 0.1em;
+  vertical-align: super;
+  fill: currentColor; /* Matches the link color */
+}
+
+
+
+
+
+
+
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-btn:first-child {
+  left: 10px;
+}
+
+.carousel-btn:last-child {
+  right: 10px;
+}
+
+.carousel-hide {
+  display: none;
 }

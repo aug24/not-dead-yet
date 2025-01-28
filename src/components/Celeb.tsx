@@ -25,29 +25,26 @@ const Celeb: React.FC<CelebProps> = ({ daysOld, birthDateString }) => {
         const link = celeb!.w || autoLink
 
         const message1 =
-          byDays==0
-            ? 'If you make it to midnight, you will have outlived'
-            : byDays==1
-              ? 'Today, you have outlived'
+            byDays==1
+              ? 'you have outlived'
               : byDays<5
-                ? 'You have now outlived'
-                : 'You have <em>easily</em> outlived'
+                ? 'you have now outlived'
+                : 'you have easily outlived'
 
         const message2 =
-          byDays==0
-            ? ``
-            : byDays==1
-              ? `by exactly one day`
+            byDays==1
+              ? `by exactly one day.`
               : `by ${byDays} days!`
 
         return <>
                 <p>
-                   You are <em> {daysOld} </em> days old today!
-                </p>
-                <p>
-                    {message1}
+                   At <em> {daysOld} </em> days old today, {message1}
                     <br/>
-                    <a className="celeb" href={link} target="_blank">{celeb!.l}</a>
+                    <a className="celeb" href={link} target="_blank">{celeb!.l}
+                      <svg className="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                        <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zm-2 14H5V7h7V5H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-7h-2v7z"/>
+                      </svg>
+                    </a>
                     <br/>
                     {message2}
                 </p>

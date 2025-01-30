@@ -46,9 +46,6 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
   return (<>
                                  <p>At <em> {daysOld} </em> days old today, {message1}</p>
     <div className="carousel-container">
-      <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>
-        ◀
-      </button>
       <div className="carousel-wrapper">
         <div
           className="carousel-content"
@@ -86,16 +83,20 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                               <p>
                                   {celeb!.l}, noted {celeb!.p}, was born on {formattedBirthDate}, <br/>and died on {formattedDeathDate} at {celeb!.o} days old.
                               </p>
-                              <Share name={celeb!.l}/>
+                              <div style={{position:'relative'}}>
+                                  <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>
+                                    ◀
+                                  </button>
+                                                          <Share name={celeb!.l}/>
 
-
+                                  <button onClick={nextSlide} className={'carousel-btn ' + hideCarouselClass}>
+                                    ▶
+                                  </button>
+                              </div>
             </div>
           })}
         </div>
       </div>
-      <button onClick={nextSlide} className={'carousel-btn ' + hideCarouselClass}>
-        ▶
-      </button>
     </div>
 </>
   );

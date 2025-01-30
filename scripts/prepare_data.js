@@ -58,6 +58,8 @@ everyone.forEach(person => {
   const nameWithUnderscores = person.personLabel?.replace(/ /g, '_');
   if (person.wikipedia_article === `https://en.wikipedia.org/wiki/${nameWithUnderscores}`) {
     delete person.wikipedia_article;
+  } else {
+    person.wikipedia_article = person.wikipedia_article.substring(30);
   }
 
   // Remove the timestamp from `birth_date` and `death_date`

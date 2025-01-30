@@ -82,7 +82,8 @@ everyone.forEach(person => {
       // densify
       person.l = person.personLabel; delete person.personLabel;
       person.b = person.birth_date; delete person.birth_date;
-      person.d = person.death_date; delete person.death_date;
+      //person.d = person.death_date;
+      delete person.death_date;
       person.p = person.profession; delete person.profession;
       person.w = person.wikipedia_article; delete person.wikipedia_article;
 

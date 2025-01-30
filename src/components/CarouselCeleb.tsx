@@ -81,7 +81,13 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                                   {message2}
                               </p>
                               <p>
-                                  {celeb!.l}, noted {celeb!.p}, was born on {formattedBirthDate}, <br/>and died on {formattedDeathDate} at {celeb!.o} days old.
+                                  {celeb!.l}, noted {celeb!.p},
+                                  <br/>
+                                  was born on {formattedBirthDate},
+                                  <br/>
+                                  and died on {formattedDeathDate},
+                                  <br/>
+                                   at {celeb!.o} days old.
                               </p>
                               <div style={{position:'relative'}}>
                                   <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>

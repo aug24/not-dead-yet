@@ -244,3 +244,8 @@ button:focus-visible {
 .carousel-hide {
   display: none;
 }
+
+* {
+  max-width: 100vw;
+  box-sizing: border-box;
+}

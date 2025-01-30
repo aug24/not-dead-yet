@@ -30,7 +30,13 @@ const MainContent: React.FC = () => {
 
                 <div>
                     <CarouselCeleb daysOld={daysOld!} birthDateString={birthDateString}/>
-                    <p>See you again tomorrow, when you'll be {daysOld!+1} days old, and hopefully have outlived someone else.</p>
+                    <p>
+                      See you again tomorrow,
+                      <br/>
+                      when you'll be {daysOld!+1} days old,
+                      <br/>
+                      and hopefully have outlived someone else.
+                    </p>
                     <button onClick={() => setDaysOld(null)}>Try a different date</button>
                 </div>
 

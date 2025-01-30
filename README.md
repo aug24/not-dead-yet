@@ -80,4 +80,27 @@ WHERE {
 LIMIT 1000
 ```
 
+# "Inspirational" Quotes for the footer.
+
+"It is a sobering thought that when Wolfgang Amadeus Mozart was my age...<br/> he had been dead for two years."
+
+"Always go to other people’s funerals, otherwise they won’t come to yours. ~Yogi Berra"
+
+"I am prepared to meet my maker. Whether my maker is prepared for the great ordeal of meeting me is another matter. ~Winston Churchill"
+
+"I bequeath my entire estate to my wife on the condition that she marries again. That will ensure there will be at least one man who will regret my death. ~Heinrich Heine"
+
+"I intend to live forever or die trying. ~Groucho Marx"
+
+"At my age, I do what Mark Twain did. I get my daily paper, look at the obituaries page and if I’m not there, I carry on as usual. ~Patrick Moore"
+
+"When I die, I want my body to be donated for research, but more specifically, to a scientist who is working on bringing dead bodies back to life. ~Nikhil Saluja"
+
+"I’m not afraid of death; I just don’t want to be there when it happens. ~Woody Allen"
+
+"This wallpaper and I are fighting a duel to the death. Either it goes, or I do.  ~Oscar Wilde"
+
+"If any of you cry at my funeral I’ll never speak to you again. ~Stan Laurel"
+
+"They couldn’t hit an elephant at this dist-- ~General John Sedgwick"
 

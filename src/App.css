@@ -234,11 +234,11 @@ button:focus-visible {
 }
 
 .carousel-btn:first-child {
-  left: 10px;
+  left:30%;
 }
 
 .carousel-btn:last-child {
-  right: 10px;
+  right: 30%;
 }
 
 .carousel-hide {

@@ -77,9 +77,11 @@ const Footer: React.FC = () => {
     <footer>
     <br/>
     <p>
+    <em>
       {quote.lines.map((line) => <>{line}<br/></>)}
+    </em>
+      ~{quote.author}
       </p>
-      <p>~{quote.author}</p>
       <p> (c) Justin Rowles - Not Dead Yet</p>
     </footer>
   );

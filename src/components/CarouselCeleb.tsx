@@ -33,10 +33,10 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
 
                       const message1 =
                           byDays==1
-                            ? 'you have outlived'
+                            ? 'you have outlived:'
                             : byDays<5
-                              ? 'you have now outlived'
-                              : 'you have easily outlived'
+                              ? 'you have now outlived:'
+                              : 'you have easily outlived:'
 
                       const message2 =
                           byDays==1

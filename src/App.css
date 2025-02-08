@@ -113,7 +113,6 @@ button:focus-visible {
 .celeb {
   font-size: 3rem; /* Makes the text bigger */
   font-weight: bold; /* Makes the text bold */
-
   position: relative; /* To position the icon */
 
 }
@@ -208,7 +207,7 @@ button:focus-visible {
   position: relative;
   margin: auto;
   overflow: hidden;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .carousel-wrapper {
@@ -255,4 +254,23 @@ button:focus-visible {
   text-align: center;
 
   width: 80%;
+}
+
+.name {
+  display: block;
+  max-width: 90%; /* Ensures it doesn't overflow the parent container */
+  word-wrap: break-word; /* Ensures long words break properly */
+  overflow-wrap: break-word;
+  white-space: normal; /* Allows text to wrap */
+  margin-left: 5%;
+}
+
+a.celeb {
+  text-align: center;
+  width: 100%;
+}
+
+.advert {
+  position: relative;
+  display: none;
 }

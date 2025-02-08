@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import CarouselCeleb from "./CarouselCeleb.tsx";
-import Advert from "./Advert.tsx";
+
 
 const MainContent: React.FC = () => {
     const [birthDateString, setBirthDateString] = useState<string>('');
@@ -31,7 +31,6 @@ const MainContent: React.FC = () => {
 
                 <div>
                     <CarouselCeleb daysOld={daysOld!} birthDateString={birthDateString}/>
-                    <Advert/>
                     <p>
                       See you again tomorrow,
                       <br/>

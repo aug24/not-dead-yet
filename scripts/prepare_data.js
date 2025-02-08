@@ -1,31 +1,31 @@
 import { readFile } from 'fs/promises';
 import { writeFile } from 'fs/promises';
 
-async function loadAndLabel(filename, profession) {
+async function loadAndLabel(filename, shortProfession) {
   const data = JSON.parse(
     await readFile(new URL(`../data/${filename}.json`, import.meta.url))
   );
   return data.map(person => {
-    person.profession = profession;
+    person.shortProfession = shortProfession;
     return person;
   });
 }
 
 
-const actors = await loadAndLabel('actors', 'actor');
-const writers = await loadAndLabel('writers', 'writer');
-const athletes = await loadAndLabel('athletes', 'athlete');
-const painters = await loadAndLabel('painters', 'painter');
-const musicians = await loadAndLabel('musicians', 'musician');
-const directore = await loadAndLabel('directors', 'director');
-const engineers = await loadAndLabel('engineers', 'engineer');
-const astronauts = await loadAndLabel('astronauts', 'astronaut');
-const scientists = await loadAndLabel('scientists', 'scientist');
-const politicians = await loadAndLabel('politicians', 'politician');
-const tv_presenters = await loadAndLabel('tv_presenters', 'tv presenter');
-const chess_players = await loadAndLabel('chess_players', 'chess player');
-const military_leaders = await loadAndLabel('military_leaders', 'military leader');
-const circus_performers = await loadAndLabel('circus_performers', 'circus performer');
+const actors = await loadAndLabel('actors', '1');
+const writers = await loadAndLabel('writers', '2');
+const athletes = await loadAndLabel('athletes', '3');
+const painters = await loadAndLabel('painters', '4');
+const musicians = await loadAndLabel('musicians', '5');
+const directore = await loadAndLabel('directors', '6');
+const engineers = await loadAndLabel('engineers', '7');
+const astronauts = await loadAndLabel('astronauts', '8');
+const scientists = await loadAndLabel('scientists', '9');
+const politicians = await loadAndLabel('politicians', 'A');
+const tv_presenters = await loadAndLabel('tv_presenters', 'B');
+const chess_players = await loadAndLabel('chess_players', 'C');
+const military_leaders = await loadAndLabel('military_leaders', 'D');
+const circus_performers = await loadAndLabel('circus_performers', 'E');
 
 const everyone = [
    ...actors,
@@ -86,10 +86,22 @@ everyone.forEach(person => {
       person.b = person.birth_date; delete person.birth_date;
       //person.d = person.death_date;
       delete person.death_date;
-      person.p = person.profession; delete person.profession;
+      // person.p = person.profession;
+      delete person.profession;
+      person.s = person.shortProfession; delete person.shortProfession;
       person.w = person.wikipedia_article; delete person.wikipedia_article;
 
       // Add the record to the array associated with the key
+      for (var i = 0; i < everyoneByDay[daysOld].length; i++) {
+        const thisPerson = everyoneByDay[daysOld][i]
+        if (thisPerson.l == person.l && (thisPerson.w == person.w || !thisPerson.w && !person.w)) {
+          // console.log("Adding profession", person.p, "to", thisPerson.l, "who already has", thisPerson.p)
+          console.log("Adding profession", person.s, "to", thisPerson.l, "who already has", thisPerson.s)
+          //thisPerson.p = thisPerson.p + ", " + person.p
+          thisPerson.s = thisPerson.s + person.s
+          return
+        }
+      }
       everyoneByDay[daysOld].push(person);
   } else {
       console.log("Removing ", person.personLabel, " as they appear to be ", daysOld, " days old")

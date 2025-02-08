@@ -16,7 +16,7 @@
         "RootDomainName": {
             "Description": "Apex domain name for your website)",
             "Type": "String"
-        },
+        }
     },
     "Resources": {
         "WWWBucket": {
@@ -25,7 +25,13 @@
                 "BucketName" : {
                     "Fn::Join": ["", ["www.", {"Ref":"RootDomainName"}]]
                 },
-                "AccessControl": "PublicRead",
+                "OwnershipControls": {
+                    "Rules": [
+                        {
+                            "ObjectOwnership": "ObjectWriter"
+                        }
+                    ]
+                },
                 "WebsiteConfiguration": {
                     "IndexDocument":"index.html",
                     "ErrorDocument":"404.html"
@@ -49,7 +55,7 @@
                             "HostedZoneId": {"Fn::FindInMap" : [ "RegionMap", { "Ref" : "AWS::Region" }, "S3hostedzoneID"]},
                             "DNSName": {"Fn::FindInMap" : [ "RegionMap", { "Ref" : "AWS::Region" }, "websiteendpoint"]}
                         }
-                    },
+                    }
                 ]
             }
         }

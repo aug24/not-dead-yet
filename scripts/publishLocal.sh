@@ -10,3 +10,4 @@ mv dist/assets/favicon-*ico dist/assets/favicon.ico
 cp favicon.ico dist
 rm -rf ../aug24.co.uk/site/not-dead-yet/*
 cp -pr dist/* ../aug24.co.uk/site/not-dead-yet/
+cp -pr dist/* ../notdeadyet.uk/site/

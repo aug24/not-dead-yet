@@ -1,46 +1,98 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
-        "BucketAddress": {
-            "Description": "Bucket address for storing your website",
+        "RootDomainName": {
+            "Description": "Apex domain name for your website",
             "Type": "String"
         },
         "AcmCertificateArn": {
-            "Description": "Certificate arn for your website",
+            "Description": "Certificate ARN for your website",
             "Type": "String"
-        },
+        }
     },
     "Resources": {
-        "cloudFrontDistribution": {
-            "Type" : "AWS::CloudFront::Distribution",
-            "Properties" : {
-                "DistributionConfig" : {
+        "WWWBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": {
+                    "Fn::Join": ["", ["www.", { "Ref": "RootDomainName" }]]
+                },
+                "OwnershipControls": {
+                    "Rules": [
+                        {
+                            "ObjectOwnership": "ObjectWriter"
+                        }
+                    ]
+                },
+                "WebsiteConfiguration": {
+                    "IndexDocument": "index.html",
+                    "ErrorDocument": "404.html"
+                }
+            }
+        },
+        "CloudFrontDistribution": {
+            "Type": "AWS::CloudFront::Distribution",
+            "Properties": {
+                "DistributionConfig": {
                     "Origins": [
                         {
-                            "CustomOriginConfig" : {
-                                "OriginProtocolPolicy" : "http-only",
+                            "DomainName": {
+                                "Fn::GetAtt": ["WWWBucket", "RegionalDomainName"]
                             },
-                            "DomainName": {"Ref":"BucketAddress"},
-                            "Id" : "bucket",
+                            "Id": "S3Origin",
+                            "S3OriginConfig": {
+                                "OriginAccessIdentity": ""
+                            }
                         }
                     ],
                     "DefaultCacheBehavior": {
-                        "DefaultTTL" : 120,
-                        "ForwardedValues" : {
-                            "QueryString" : "False",
+                        "TargetOriginId": "S3Origin",
+                        "ViewerProtocolPolicy": "redirect-to-https",
+                        "ForwardedValues": {
+                            "QueryString": false
                         },
-                        "TargetOriginId" : "bucket",
-                        "ViewerProtocolPolicy" : "redirect-to-https"
+                        "DefaultTTL": 120
                     },
-                    "DefaultRootObject" : "index.html",
-                    "Enabled" : "True",
-                    "PriceClass" : "PriceClass_100",
-                    "ViewerCertificate" : {
-                        "AcmCertificateArn" : {"Ref":"AcmCertificateArn"},
-                        "SslSupportMethod": "sni-only",
+                    "DefaultRootObject": "index.html",
+                    "Enabled": true,
+                    "PriceClass": "PriceClass_100",
+                    "ViewerCertificate": {
+                        "AcmCertificateArn": { "Ref": "AcmCertificateArn" },
+                        "SslSupportMethod": "sni-only"
                     }
                 }
             }
+        },
+        "Route53DNS": {
+            "Type": "AWS::Route53::RecordSetGroup",
+            "Properties": {
+                "HostedZoneName": {
+                    "Fn::Join": ["", [{ "Ref": "RootDomainName" }, "."]]
+                },
+                "RecordSets": [
+                    {
+                        "Name": {
+                            "Fn::Join": ["", ["www.", { "Ref": "RootDomainName" }]]
+                        },
+                        "Type": "A",
+                        "AliasTarget": {
+                            "HostedZoneId": "Z2FDTNDATAQYW2",
+                            "DNSName": {
+                                "Fn::GetAtt": ["CloudFrontDistribution", "DomainName"]
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
+    "Outputs": {
+        "WebsiteURL": {
+            "Value": {
+                "Fn::Sub": "https://${CloudFrontDistribution.DomainName}"
+            },
+            "Description": "CloudFront URL for website"
+        }
+    }
 }
+

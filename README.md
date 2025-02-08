@@ -1,18 +1,20 @@
 # not-dead-yet
 
+## Todo
 
-# Todo
+ * Add more data.  
 
-Add more data.  
+ * Try to work out a better way of establishing "notable"
 
-Try to work out a better way of establishing "notable"
+ * Add Google Ads
 
-Publish at its own address
+ * Work out why otto von bismark gets "writer" several times.
 
-Add Google Ads
+ * Only calculate celeb name once
 
+ * Write doco or script for pulling wikidata (see below)
 
-
+## Wikidata Notes
 
 To filter Wikidata queries by specific professions using SPARQL, you'll need the corresponding Wikidata QIDs (unique identifiers) for each profession. Here are some notable professions along with their QIDs that you can use in your queries:
 

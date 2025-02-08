@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import getAllCelebs from '../functions/GetAllCelebs.tsx';
 import getProfession from '../functions/GetProfession.tsx';
+import getCelebName from '../functions/GetCelebName.tsx';
 import Share from './Share.tsx'
 import Advert from "./Advert.tsx";
 
@@ -69,13 +70,13 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                       deathDate.setDate(deathDate.getDate() + celeb!.o!);
                       const formattedDeathDate = deathDate.toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
 
-                      const link = 'https://en.wikipedia.org/wiki/' + (celeb!.w || celeb!.l?.replace(/ /g, '_'))
+                      const link = 'https://en.wikipedia.org/wiki/' + (celeb!.w || getCelebName(celeb!.i).replace(/ /g, '_'))
 
             return <div className="carousel-item">
                               <p>
                                   <div className="name">
                                   <a className="celeb" href={link} target="_blank">
-                                  {celeb!.l}
+                                  {getCelebName(celeb!.i)}
                                     <svg className="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
                                       <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zm-2 14H5V7h7V5H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-7h-2v7z"/>
                                     </svg>
@@ -85,7 +86,7 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                                   {message2}
                               </p>
                               <p>
-                                  {celeb!.l}, {getProfession(celeb!.s)}
+                                  {getCelebName(celeb!.i)}, {getProfession(celeb!.s)}
                                   <br/>
                                   was born on {formattedBirthDate},
                                   <br/>
@@ -97,7 +98,7 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                                   <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>
                                     ◀
                                   </button>
-                                                          <Share name={celeb!.l}/>
+                                                          <Share name={getCelebName(celeb!.i)}/>
 
                                   <button onClick={nextSlide} className={'carousel-btn ' + hideCarouselClass}>
                                     ▶

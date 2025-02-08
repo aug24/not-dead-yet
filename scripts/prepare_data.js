@@ -46,6 +46,9 @@ const everyone = [
 
 const everyoneByDay = {}
 
+let currentId = 1;
+const nameToIdMap = {}
+const idToNameMap = {}
 
 everyone.forEach(person => {
 
@@ -82,7 +85,6 @@ everyone.forEach(person => {
       }
 
       // densify
-      person.l = person.personLabel; delete person.personLabel;
       person.b = person.birth_date; delete person.birth_date;
       //person.d = person.death_date;
       delete person.death_date;
@@ -90,6 +92,19 @@ everyone.forEach(person => {
       delete person.profession;
       person.s = person.shortProfession; delete person.shortProfession;
       person.w = person.wikipedia_article; delete person.wikipedia_article;
+
+      const words = person.personLabel.split(" "); // Split name into words
+      person.i = [];
+
+      words.forEach(word => {
+          if (!(word in nameToIdMap)) { // Check if word is already in the map
+              const id = currentId++;
+              nameToIdMap[word] = id;
+              idToNameMap[id] = word;
+          }
+          person.i.push(nameToIdMap[word])
+      });
+      delete person.personLabel
 
       // Add the record to the array associated with the key
       for (var i = 0; i < everyoneByDay[daysOld].length; i++) {
@@ -113,6 +128,8 @@ if (NaN in everyoneByDay) {
 }
 
 const everyoneByDayOutput = JSON.stringify(everyoneByDay);
-
 await writeFile('./src/data/peopleByDay.json', everyoneByDayOutput, 'utf8');
+
+const idToNameMapOutput = JSON.stringify(idToNameMap);
+await writeFile('./src/data/idToNameMap.json', idToNameMapOutput, 'utf8');
 

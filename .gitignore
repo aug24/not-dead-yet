@@ -156,3 +156,4 @@ dist-ssr
 
 package-lock.json
 src/data/peopleByDay.json
+src/data/idToNameMap.json

@@ -58,6 +58,7 @@ const MainContent: React.FC = () => {
                         className="large-input"
                     />
                     <br/>
+                    <br/>
                     <button
                         className="large-input"
                         onClick={handleDone}

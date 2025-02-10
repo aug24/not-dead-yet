@@ -8,9 +8,15 @@
 
  * Add Google Ads
 
- * Work out why otto von bismark gets "writer" several times.
+ * Make favicon smaller!
 
  * Only calculate celeb name once
+
+ * Convert each person to a (s)csv:
+    *     {"d":379,"s":"15","i":[5136,5959]}  (Antonie Strassmann) 
+       -> "379;15;5136,5959"  43 chars to 18
+    *     {"d":-6570,"s":"3","w":"Dave_Gilmour_(ice_hockey,_born_1881)","i":[3422,10162]}
+       -> "-6570;3;3422,10162;Dave_Gilmour_(ice_hockey,_born_1881)"  86 chars to 57
 
  * Write doco or script for pulling wikidata (see below)
 

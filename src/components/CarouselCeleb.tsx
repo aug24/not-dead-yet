@@ -65,9 +65,14 @@ const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString 
                       window.history.pushState({}, "", bookmarkUrl.toString());
                       document.title = `Not Dead Yet: ${birthDateString}`;
 
-                      const formattedBirthDate = new Date(celeb!.b!).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
-                      let deathDate = new Date(celeb!.b!);
-                      deathDate.setDate(deathDate.getDate() + celeb!.o!);
+                      let epochDate = new Date(1900, 0, 1)
+
+                      const celebBirthDate = new Date(epochDate);
+                      celebBirthDate.setDate(epochDate.getDate() + celeb!.d!);
+                      const formattedBirthDate = new Date(celebBirthDate).toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
+
+                      const deathDate = new Date(celebBirthDate)
+                      deathDate.setDate(celebBirthDate.getDate() + celeb!.o!);
                       const formattedDeathDate = deathDate.toLocaleDateString('en-UK', {  year: 'numeric',  month: 'long',  day: 'numeric'});
 
                       const link = 'https://en.wikipedia.org/wiki/' + (celeb!.w || getCelebName(celeb!.i).replace(/ /g, '_'))

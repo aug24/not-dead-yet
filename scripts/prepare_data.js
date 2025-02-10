@@ -76,22 +76,25 @@ everyone.forEach(person => {
   // Remove `person` field
   delete person.person;
 
+  const epochDate = new Date(1900, 0, 1)
   const birthDate = new Date(person.birth_date);
   const deathDate = new Date(person.death_date);
   const daysOld = Math.floor((deathDate - birthDate) / (1000 * 60 * 60 * 24)); // Difference in days
+  const daysEpoch = Math.floor((birthDate - epochDate) / (1000 * 60 * 60 * 24)); // Difference in days
   if (daysOld > 6570 && daysOld < 40000) {
       if (!everyoneByDay[daysOld]) {
         everyoneByDay[daysOld] = [];
       }
 
       // densify
-      person.b = person.birth_date; delete person.birth_date;
+      delete person.birth_date;
       //person.d = person.death_date;
       delete person.death_date;
       // person.p = person.profession;
       delete person.profession;
       person.s = person.shortProfession; delete person.shortProfession;
       person.w = person.wikipedia_article; delete person.wikipedia_article;
+      person.d = daysEpoch
 
       const words = person.personLabel.split(" "); // Split name into words
       person.i = [];
@@ -104,16 +107,15 @@ everyone.forEach(person => {
           }
           person.i.push(nameToIdMap[word])
       });
-      delete person.personLabel
 
       // Add the record to the array associated with the key
       for (var i = 0; i < everyoneByDay[daysOld].length; i++) {
         const thisPerson = everyoneByDay[daysOld][i]
         if (thisPerson.l == person.l && (thisPerson.w == person.w || !thisPerson.w && !person.w)) {
-          // console.log("Adding profession", person.p, "to", thisPerson.l, "who already has", thisPerson.p)
-          console.log("Adding profession", person.s, "to", thisPerson.l, "who already has", thisPerson.s)
-          //thisPerson.p = thisPerson.p + ", " + person.p
-          thisPerson.s = thisPerson.s + person.s
+          if (!thisPerson.s.includes(person.s)) {
+            console.log("Adding profession", person.s, "to", person.personLabel, "who already has", thisPerson.s)
+            thisPerson.s = thisPerson.s + person.s
+          }
           return
         }
       }
@@ -121,6 +123,7 @@ everyone.forEach(person => {
   } else {
       console.log("Removing ", person.personLabel, " as they appear to be ", daysOld, " days old")
   }
+  delete person.personLabel
 });
 
 if (NaN in everyoneByDay) {

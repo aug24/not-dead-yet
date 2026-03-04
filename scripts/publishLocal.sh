@@ -7,7 +7,7 @@ sed -i '' 's|"/assets/favicon.*.ico"|"assets/favicon.ico"|g' dist/index.html
 mv dist/assets/index-*css dist/assets/index.css
 mv dist/assets/index-*js dist/assets/index.js
 mv dist/assets/favicon-*ico dist/assets/favicon.ico
-cp favicon-optimized.ico dist
+cp favicon-optimized.ico dist/favicon.ico
 rm -rf ../aug24.co.uk/site/not-dead-yet/*
 cp -pr dist/* ../aug24.co.uk/site/not-dead-yet/
 cp -pr dist/* ../notdeadyet.uk/site/

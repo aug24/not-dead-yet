@@ -1,18 +1,32 @@
-import untypedIdToNameMap from '../data/idToNameMap.json';
-
 interface IdToNameMap {
     [key: number]: string;
 }
 
-const idToNameMap: IdToNameMap = untypedIdToNameMap
+let idToNameMap: IdToNameMap | null = null;
+let loadPromise: Promise<IdToNameMap> | null = null;
 
-function getCelebName(idArray: number[]): string {
-    // Load idToNameMap from the JSON file
+async function loadIdToNameMap(): Promise<IdToNameMap> {
+    if (idToNameMap) return idToNameMap;
 
-    // Map each ID to its corresponding word and join them into a name
-    return idArray.map(id => idToNameMap[id] || "").join(" ");
+    if (!loadPromise) {
+        loadPromise = fetch('/data/idToNameMap.json')
+            .then(res => res.json())
+            .then(data => {
+                idToNameMap = data;
+                return data;
+            });
+    }
+
+    return loadPromise;
 }
 
+// Preload on module init
+loadIdToNameMap();
+
+function getCelebName(idArray: number[]): string {
+    if (!idToNameMap) return "Loading...";
+    return idArray.map(id => idToNameMap![id] || "").join(" ");
+}
+
+export { loadIdToNameMap };
 export default getCelebName;
-
-

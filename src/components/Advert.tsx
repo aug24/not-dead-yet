@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FunctionComponent } from 'preact'
 
-const Advert: React.FC = () => {
+const Advert: FunctionComponent = () => {
   return (
     <div>
     </div>

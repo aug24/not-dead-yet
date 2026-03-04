@@ -1,10 +1,10 @@
-import React from "react";
+import type { FunctionComponent } from 'preact'
 
 type ShareProps = {
-  name: String
+  name: string
 };
 
-const Share: React.FC<ShareProps> = ({ name }) => {
+const Share: FunctionComponent<ShareProps> = ({ name }) => {
   const address =  window.location.origin + window.location.pathname
   const shareText = `See who you've outlived at ${address}.\n\nI've outlived ${name}!`
   const handleShare = async () => {

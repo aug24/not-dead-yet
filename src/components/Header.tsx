@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FunctionComponent } from 'preact'
 
-const Header: React.FC = () => {
+const Header: FunctionComponent = () => {
   return (
     <header>
       <h1>Not Dead Yet</h1>

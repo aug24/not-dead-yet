@@ -1,22 +1,23 @@
-import React, {useState} from 'react';
+import type { FunctionComponent } from 'preact'
+import { useState } from 'preact/hooks'
 import CarouselCeleb from "./CarouselCeleb.tsx";
 
 
-const MainContent: React.FC = () => {
+const MainContent: FunctionComponent = () => {
     const [birthDateString, setBirthDateString] = useState<string>('');
     const [daysOld, setDaysOld] = useState<number | null>(null);
 
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);
-    let dd = params.get("dd");
-    let mm = params.get("mm");
-    let yy = params.get("yy");
+    const dd = params.get("dd");
+    const mm = params.get("mm");
+    const yy = params.get("yy");
     if (!birthDateString && dd && mm && yy) {
       setBirthDateString(`${yy}-${mm}-${dd}`);
     }
 
-    const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setBirthDateString(event.target.value);
+    const handleDateChange = (event: Event) => {
+        setBirthDateString((event.target as HTMLInputElement).value);
     }
 
     const handleDone = () => {

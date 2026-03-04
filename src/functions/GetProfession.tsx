@@ -15,7 +15,7 @@ const professionLabels = new Map([
     ['E', { label: 'circus performer' }]
 ]);
 
-function getProfession(professions: String) {
+function getProfession(professions: string) {
     let result = ''
     for (let i = 0; i < professions.length; i++) {
         const profession = professions[i];

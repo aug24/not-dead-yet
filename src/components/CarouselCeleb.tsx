@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import type { FunctionComponent } from 'preact'
+import { useState, useEffect } from 'preact/hooks'
 import getAllCelebs from '../functions/GetAllCelebs.tsx';
 import getProfession from '../functions/GetProfession.tsx';
 import getCelebName, { loadIdToNameMap } from '../functions/GetCelebName.tsx';
@@ -8,10 +9,10 @@ import { Person } from '../types/Person.tsx';
 
 type CarouselCelebProps = {
   daysOld: number
-  birthDateString: String
+  birthDateString: string
 };
 
-const CarouselCeleb: React.FC<CarouselCelebProps> = ({ daysOld, birthDateString }) => {
+const CarouselCeleb: FunctionComponent<CarouselCelebProps> = ({ daysOld, birthDateString }) => {
   const [celebs, setCelebs] = useState<Person[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);

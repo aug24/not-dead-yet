@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FunctionComponent } from 'preact'
 
 
 const quotes= [
@@ -71,8 +71,8 @@ lines: [
 ]
 
 
-const Footer: React.FC = () => {
-  let quote=quotes[Math.floor(Math.random() * quotes.length)]
+const Footer: FunctionComponent = () => {
+  const quote=quotes[Math.floor(Math.random() * quotes.length)]
   return (
     <footer>
     <br/>

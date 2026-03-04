@@ -1,213 +1,144 @@
+/* Theme: Warm, contemplative "memento mori" aesthetic */
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --text-primary: #eee8d5;
+  --text-secondary: #b8b2a0;
+  --accent: #c9a227;
+  --accent-hover: #d4b341;
+  --link: #7eb8da;
+  --link-hover: #a5d4f0;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
 #root {
-  max-width: 1280px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0.75rem 0;
+  color: var(--text-secondary);
+}
+
+em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Form elements */
+input[type="date"] {
+  font-size: 1.25rem;
+  padding: 12px 16px;
+  border: 2px solid var(--text-secondary);
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   text-align: center;
 }
 
-h1 {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  color: #9797ff
+input[type="date"]:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Celebrity name display */
+.name {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a.celeb {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button:hover {
-    border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #646bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.large-input {
-  font-size: 3rem;
-  padding: 10px;
-}
-
-.celeb {
-  font-size: 3rem; /* Makes the text bigger */
-  font-weight: bold; /* Makes the text bold */
-  position: relative; /* To position the icon */
-
-}
-
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #9797ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-}
-
-.large-input {
-  font-size: 18px;
-  padding: 10px;
+a.celeb:hover {
+  color: var(--accent-hover);
 }
 
 .external-icon {
-  margin-left: 0.1em;
-  vertical-align: super;
-  fill: currentColor; /* Matches the link color */
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  opacity: 0.7;
+  flex-shrink: 0;
 }
 
-
-
-
-
-
-
-
+/* Carousel */
 .carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  margin: auto;
+  margin: 1rem auto;
   overflow: hidden;
-  max-width: 100%;
 }
 
 .carousel-wrapper {
@@ -216,61 +147,104 @@ button:focus-visible {
 
 .carousel-content {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-out;
 }
 
 .carousel-item {
   min-width: 100%;
+  padding: 0 1rem;
 }
 
 .carousel-btn {
   position: absolute;
-  top: 25%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
+  top: 30%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
 }
 
-.carousel-btn:first-child {
-  left:20%;
+.carousel-btn:hover {
+  opacity: 1;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg-primary);
 }
 
-.carousel-btn:last-child {
-  right: 20%;
+.carousel-btn:first-of-type {
+  left: 5%;
+}
+
+.carousel-btn:last-of-type {
+  right: 5%;
 }
 
 .carousel-hide {
   display: none;
 }
 
-* {
-  max-width: 100vw;
-  box-sizing: border-box;
+/* Footer */
+footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
-.footer {
-  text-align: center;
-
-  width: 80%;
+footer em {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-weight: normal;
 }
 
-.name {
-  display: block;
-  max-width: 90%; /* Ensures it doesn't overflow the parent container */
-  word-wrap: break-word; /* Ensures long words break properly */
-  overflow-wrap: break-word;
-  white-space: normal; /* Allows text to wrap */
-  margin-left: 5%;
+/* Loading state */
+.loading {
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
-a.celeb {
-  text-align: center;
-  width: 100%;
+/* Light mode support */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #faf6f1;
+    --bg-secondary: #f0ebe3;
+    --text-primary: #2d2a24;
+    --text-secondary: #5c574d;
+    --accent: #8b6914;
+    --accent-hover: #a37d1c;
+    --link: #2563eb;
+    --link-hover: #1d4ed8;
+  }
+
+  body {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+
+  input[type="date"] {
+    background: white;
+  }
 }
 
-.advert {
-  position: relative;
-  display: none;
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  a.celeb {
+    font-size: 1.5rem;
+  }
+
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+  }
 }

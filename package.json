@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "publish": "./scripts/publishLocal.sh",
+    "deploy": "./scripts/deploy.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

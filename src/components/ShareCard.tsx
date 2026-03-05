@@ -13,6 +13,8 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [canShareFiles, setCanShareFiles] = useState(false)
+  const [showShareOptions, setShowShareOptions] = useState(false)
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
   const drawCornerOrnament = (ctx: CanvasRenderingContext2D, x: number, y: number, flipX: boolean, flipY: boolean) => {
     ctx.save()
@@ -178,12 +180,14 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
     // Generate image URL
     setImageUrl(canvas.toDataURL('image/png'))
 
-    // Check if file sharing is supported
+    // Check if file sharing is supported (mobile only)
     canvas.toBlob((blob) => {
-      if (blob) {
+      if (blob && isMobile) {
         const file = new File([blob], 'test.png', { type: 'image/png' })
         const canShare = typeof navigator.canShare === 'function' && navigator.canShare({ files: [file] })
         setCanShareFiles(canShare)
+      } else {
+        setCanShareFiles(false)
       }
     })
   }
@@ -199,29 +203,37 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
   const shareImage = async () => {
     if (!canvasRef.current) return
 
-    canvasRef.current.toBlob(async (blob) => {
-      if (!blob) return
+    // On mobile with file share support, use native share
+    if (canShareFiles) {
+      canvasRef.current.toBlob(async (blob) => {
+        if (!blob) return
 
-      const file = new File([blob], 'in-memoriam.png', { type: 'image/png' })
-      const url = window.location.href
+        const file = new File([blob], 'in-memoriam.png', { type: 'image/png' })
+        const url = window.location.href
 
-      // Only attempt native share if we know it supports files
-      if (canShareFiles) {
         try {
           await navigator.share({
             files: [file],
             title: "I'm Not Dead Yet!",
             text: `I've outlived ${name}! ${url}`,
           })
-          return
         } catch {
-          // User cancelled or failed - fall through to download
+          // User cancelled
         }
-      }
+      })
+    } else {
+      // On desktop, toggle share options
+      setShowShareOptions(!showShareOptions)
+    }
+  }
 
-      // Fallback to download
-      downloadImage()
-    })
+  const url = window.location.href
+  const text = `I've outlived ${name}!`
+  const shareLinks = {
+    twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
+    email: `mailto:?subject=${encodeURIComponent("I'm Not Dead Yet!")}&body=${encodeURIComponent(`${text}\n\n${url}`)}`,
   }
 
   return (
@@ -237,9 +249,17 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
           <img src={imageUrl} alt="Condolences card" />
           <div className="card-actions">
             <button onClick={downloadImage}>Download</button>
-            {canShareFiles && <button onClick={shareImage}>Share</button>}
+            <button onClick={shareImage}>{showShareOptions ? 'Close' : 'Share'}</button>
             <button onClick={() => setImageUrl(null)} className="card-close">×</button>
           </div>
+          {showShareOptions && (
+            <div className="share-options">
+              <a href={shareLinks.twitter} target="_blank" rel="noopener">Twitter/X</a>
+              <a href={shareLinks.facebook} target="_blank" rel="noopener">Facebook</a>
+              <a href={shareLinks.whatsapp} target="_blank" rel="noopener">WhatsApp</a>
+              <a href={shareLinks.email}>Email</a>
+            </div>
+          )}
         </div>
       )}
     </div>

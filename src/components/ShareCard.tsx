@@ -200,6 +200,7 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
       if (!blob) return
 
       const file = new File([blob], 'in-memoriam.png', { type: 'image/png' })
+      const url = window.location.href
 
       // Only attempt native share if we know it supports files
       if (canShareFiles) {
@@ -207,7 +208,7 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
           await navigator.share({
             files: [file],
             title: "I'm Not Dead Yet!",
-            text: `I've outlived ${name}!`,
+            text: `I've outlived ${name}! ${url}`,
           })
           return
         } catch {

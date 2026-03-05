@@ -22,13 +22,14 @@ const MainContent: FunctionComponent = () => {
         setError('');
     }
 
-    const handleDone = () => {
-        if (!birthDateString) {
+    const handleDone = (dateOverride?: string) => {
+        const dateStr = dateOverride ?? birthDateString;
+        if (!dateStr) {
             setError('Please enter your date of birth first.');
             return;
         }
         const today = new Date();
-        const birthDate = new Date(birthDateString);
+        const birthDate = new Date(dateStr);
         if (isNaN(birthDate.getTime())) {
             setError('That doesn\'t look like a valid date.');
             return;
@@ -43,6 +44,7 @@ const MainContent: FunctionComponent = () => {
             setError('You must be at least 18 years old to use this site.');
             return;
         }
+        if (dateOverride) setBirthDateString(dateOverride);
         setDaysOld(daysOldNew);
     }
     return (
@@ -72,8 +74,9 @@ const MainContent: FunctionComponent = () => {
                         value={birthDateString}
                         onChange={handleDateChange}
                         onKeyDown={(e) => {
-                            if (e.key === "Enter")
-                                handleDone()
+                            if (e.key === "Enter") {
+                                handleDone((e.target as HTMLInputElement).value);
+                            }
                         }}
                         className="large-input"
                     />
@@ -81,7 +84,7 @@ const MainContent: FunctionComponent = () => {
                     <br/>
                     <button
                         className="large-input"
-                        onClick={handleDone}
+                        onClick={() => handleDone()}
                     >Check please!</button>
                     {error && <p className="error">{error}</p>}
                 </div>

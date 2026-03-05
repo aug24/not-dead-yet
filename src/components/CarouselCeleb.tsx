@@ -4,6 +4,7 @@ import getAllCelebs from '../functions/GetAllCelebs.tsx';
 import getProfession from '../functions/GetProfession.tsx';
 import getCelebName, { loadIdToNameMap } from '../functions/GetCelebName.tsx';
 import Share from './Share.tsx'
+import ShareCard from './ShareCard.tsx'
 import Advert from "./Advert.tsx";
 import { Person } from '../types/Person.tsx';
 
@@ -190,12 +191,18 @@ const CarouselCeleb: FunctionComponent<CarouselCelebProps> = ({ daysOld, birthDa
                     <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>
                       ◀
                     </button>
-                    <Share name={getCelebName(celeb!.i)} />
+                    <Share name={name} />
 
                     <button onClick={nextSlide} className={'carousel-btn ' + hideCarouselClass}>
                       ▶
                     </button>
                   </div>
+                  <ShareCard
+                    name={name}
+                    yourDays={daysOld}
+                    celebDays={celebDays}
+                    profession={getProfession(celeb!.s)}
+                  />
                   <Advert />
                 </div>
               );

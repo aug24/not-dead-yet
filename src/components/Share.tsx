@@ -19,7 +19,7 @@ const Share: FunctionComponent<ShareProps> = ({ name }) => {
         text: text,
         url: url,
       })
-    } catch (error) {
+    } catch {
       // User cancelled or error
     }
   }

@@ -320,6 +320,61 @@ footer em {
   border-color: var(--accent);
 }
 
+/* Share Card */
+.share-card {
+  margin: 1rem 0;
+}
+
+.card-btn {
+  background: transparent;
+  border: 1px dashed var(--text-secondary);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.card-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.card-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.card-preview img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.card-actions button {
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
+.card-close {
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  width: 36px;
+  padding: 8px;
+}
+
+.card-close:hover {
+  background: #e57373;
+  border-color: #e57373;
+  color: white;
+}
+
 /* Advert */
 .advert-container {
   margin: 1.5rem 0;

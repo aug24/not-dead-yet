@@ -103,10 +103,27 @@ input[type="date"]:focus {
   border-color: var(--accent);
 }
 
+/* Phrasing */
+.phrasing-intro {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.phrasing-outro {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.celeb-details {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
 /* Celebrity name display */
 .name {
   display: block;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   max-width: 90%;
 }
 

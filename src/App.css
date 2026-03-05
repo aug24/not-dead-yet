@@ -284,6 +284,42 @@ footer em {
   margin-top: 1.5rem;
 }
 
+/* Share options */
+.share-container {
+  display: inline-block;
+  position: relative;
+}
+
+.share-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.share-options a,
+.share-options .copy-btn {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--text-secondary);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-options a:hover,
+.share-options .copy-btn:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
 /* Advert */
 .advert-container {
   margin: 1.5rem 0;

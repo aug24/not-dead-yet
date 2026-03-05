@@ -72,6 +72,7 @@ const MainContent: FunctionComponent = () => {
                         type="date"
                         id="date-input"
                         value={birthDateString}
+                        max={new Date(Date.now() - 18 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]}
                         onChange={handleDateChange}
                         onKeyDown={(e) => {
                             if (e.key === "Enter") {

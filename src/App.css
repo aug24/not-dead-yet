@@ -233,6 +233,40 @@ footer em {
   }
 }
 
+/* About page */
+.about {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--accent);
+  font-weight: normal;
+  text-align: center;
+}
+
+.about h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.about p {
+  color: var(--text-secondary);
+}
+
+.about button {
+  margin-top: 1.5rem;
+}
+
+/* Advert */
+.advert-container {
+  margin: 1.5rem 0;
+  min-height: 100px;
+}
+
 /* Mobile adjustments */
 @media (max-width: 480px) {
   h1 {

@@ -71,20 +71,29 @@ lines: [
 ]
 
 
-const Footer: FunctionComponent = () => {
-  const quote=quotes[Math.floor(Math.random() * quotes.length)]
+type FooterProps = {
+  onAbout: () => void
+  showAboutLink: boolean
+}
+
+const Footer: FunctionComponent<FooterProps> = ({ onAbout, showAboutLink }) => {
+  const quote = quotes[Math.floor(Math.random() * quotes.length)]
   return (
     <footer>
-    <br/>
-    <p>
-    <em>
-      {quote.lines.map((line) => <>{line}<br/></>)}
-    </em>
-      ~{quote.author}
+      <p>
+        <em>
+          {quote.lines.map((line, i) => <span key={i}>{line}<br /></span>)}
+        </em>
+        ~{quote.author}
       </p>
-      <p> (c) Justin Rowles - Not Dead Yet</p>
+      <p>
+        © Justin Rowles — Not Dead Yet
+        {showAboutLink && (
+          <> · <a href="#" onClick={(e) => { e.preventDefault(); onAbout() }}>About</a></>
+        )}
+      </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

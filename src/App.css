@@ -323,6 +323,8 @@ footer em {
 /* Share Card */
 .share-card {
   margin: 1rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .card-btn {
@@ -339,8 +341,7 @@ footer em {
 }
 
 .card-preview {
-  position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .card-preview img {

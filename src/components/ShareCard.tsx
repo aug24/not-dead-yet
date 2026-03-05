@@ -6,9 +6,10 @@ type ShareCardProps = {
   yourDays: number
   celebDays: number
   profession: string
+  birthDate: string
 }
 
-const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDays, profession }) => {
+const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDays, profession, birthDate }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [canShareFiles, setCanShareFiles] = useState(false)
@@ -150,15 +151,17 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
     ctx.font = 'italic 18px Georgia, serif'
     ctx.fillText(`${diffText} ahead`, width / 2, 355)
 
-    // Today's date
-    const today = new Date().toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
+    // Dates line: birthday and today
+    const formatDate = (dateStr: string) => {
+      const d = new Date(dateStr)
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+    }
+    const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+    const formattedBirthday = formatDate(birthDate)
+
     ctx.fillStyle = '#8b7355'
     ctx.font = '14px Georgia, serif'
-    ctx.fillText(today, width / 2, 395)
+    ctx.fillText(`Born ${formattedBirthday}  ·  Still alive ${today}`, width / 2, 395)
 
     // Footer divider
     ctx.strokeStyle = '#c4b59d'

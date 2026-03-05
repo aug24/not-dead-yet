@@ -187,7 +187,7 @@ const CarouselCeleb: FunctionComponent<CarouselCelebProps> = ({ daysOld, birthDa
                     <br />
                     died {formattedDeathDate}.
                   </p>
-                  <div style={{ position: 'relative' }}>
+                  <div style={{ position: 'relative', zIndex: 2 }}>
                     <button onClick={prevSlide} className={'carousel-btn ' + hideCarouselClass}>
                       ◀
                     </button>
@@ -202,6 +202,7 @@ const CarouselCeleb: FunctionComponent<CarouselCelebProps> = ({ daysOld, birthDa
                     yourDays={daysOld}
                     celebDays={celebDays}
                     profession={getProfession(celeb!.s)}
+                    birthDate={birthDateString}
                   />
                   <Advert />
                 </div>

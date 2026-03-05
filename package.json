@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "publish": "./scripts/publishLocal.sh",
     "deploy": "./scripts/deploy.sh",
+    "refresh-cdn": "./scripts/refresh-cdn.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

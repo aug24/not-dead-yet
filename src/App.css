@@ -211,6 +211,12 @@ footer em {
   font-style: italic;
 }
 
+/* Error message */
+.error {
+  color: #e57373;
+  margin-top: 1rem;
+}
+
 /* Light mode support */
 @media (prefers-color-scheme: light) {
   :root {

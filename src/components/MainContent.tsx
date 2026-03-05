@@ -6,6 +6,7 @@ import CarouselCeleb from "./CarouselCeleb.tsx";
 const MainContent: FunctionComponent = () => {
     const [birthDateString, setBirthDateString] = useState<string>('');
     const [daysOld, setDaysOld] = useState<number | null>(null);
+    const [error, setError] = useState<string>('');
 
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);
@@ -18,12 +19,30 @@ const MainContent: FunctionComponent = () => {
 
     const handleDateChange = (event: Event) => {
         setBirthDateString((event.target as HTMLInputElement).value);
+        setError('');
     }
 
     const handleDone = () => {
+        if (!birthDateString) {
+            setError('Please enter your date of birth first.');
+            return;
+        }
         const today = new Date();
         const birthDate = new Date(birthDateString);
+        if (isNaN(birthDate.getTime())) {
+            setError('That doesn\'t look like a valid date.');
+            return;
+        }
+        if (birthDate >= today) {
+            setError('You haven\'t been born yet!');
+            return;
+        }
         const daysOldNew = Math.ceil((today.getTime() - birthDate.getTime()) / 1000 / 3600 / 24);
+        const yearsOld = daysOldNew / 365.25;
+        if (yearsOld < 18) {
+            setError('You must be at least 18 years old to use this site.');
+            return;
+        }
         setDaysOld(daysOldNew);
     }
     return (
@@ -64,6 +83,7 @@ const MainContent: FunctionComponent = () => {
                         className="large-input"
                         onClick={handleDone}
                     >Check please!</button>
+                    {error && <p className="error">{error}</p>}
                 </div>
             }
         </main>

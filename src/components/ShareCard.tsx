@@ -48,7 +48,7 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
     if (!ctx) return
 
     const width = 600
-    const height = 450
+    const height = 470
     canvas.width = width
     canvas.height = height
 
@@ -150,17 +150,27 @@ const ShareCard: FunctionComponent<ShareCardProps> = ({ name, yourDays, celebDay
     ctx.font = 'italic 18px Georgia, serif'
     ctx.fillText(`${diffText} ahead`, width / 2, 355)
 
+    // Today's date
+    const today = new Date().toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
+    ctx.fillStyle = '#8b7355'
+    ctx.font = '14px Georgia, serif'
+    ctx.fillText(today, width / 2, 395)
+
     // Footer divider
     ctx.strokeStyle = '#c4b59d'
     ctx.beginPath()
-    ctx.moveTo(150, 390)
-    ctx.lineTo(width - 150, 390)
+    ctx.moveTo(180, 410)
+    ctx.lineTo(width - 180, 410)
     ctx.stroke()
 
     // Footer
     ctx.fillStyle = '#8b7355'
     ctx.font = '14px Georgia, serif'
-    ctx.fillText('notdeadyet.uk', width / 2, 420)
+    ctx.fillText('notdeadyet.uk', width / 2, 435)
 
     // Generate image URL
     setImageUrl(canvas.toDataURL('image/png'))
